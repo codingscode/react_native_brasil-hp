@@ -3,6 +3,8 @@ import { View, Text, Image } from 'react-native'
 
 
 
+
+
 class App extends Component {
    constructor(props) {
       super(props)
@@ -14,8 +16,8 @@ class App extends Component {
  
    render() {
       return (
-         <View>
-            <Text>{this.state.nome}</Text>
+         <View style={{ marginTop: 20 }} >
+            <Text style={{ fontSize: 23, color: 'red', textAlign: 'center' }} >{this.state.nome}</Text>
  
          </View>
       )
