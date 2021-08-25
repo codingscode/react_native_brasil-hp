@@ -14,7 +14,7 @@ no terminal da pasta:
 
 
 
-
+clicando em entrar altera o nome
 
 
 
