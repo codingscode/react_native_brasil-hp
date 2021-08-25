@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 
 
 class App extends Component {
@@ -7,6 +7,11 @@ class App extends Component {
      return (
         <View>
            <Text>mais testes!</Text>
+           <Text style={{ color: 'blue', fontSize: 25, margin: 15 }} >
+              Sujeito Programador
+           </Text>
+           <Image  source={{ uri: 'https://sujeitoprogramador.com/steve.png' }} style={{width: 300, height: 300}} />
+
         </View>
      )
   }
