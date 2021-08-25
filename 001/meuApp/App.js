@@ -11,7 +11,7 @@ class App extends Component {
            <Text style={{ color: 'blue', fontSize: 25, margin: 15 }} >
               Sujeito Programador
            </Text>
-           <Jobs />
+           <Jobs largura={80} altura={50} />
 
         </View>
      )
@@ -29,7 +29,7 @@ class Jobs extends Component {
 
 
      return (
-        <Image source={{ uri: imagem }} style={{width: 300, height: 300}} />
+        <Image source={{ uri: imagem }} style={{width: this.props.largura, height: this.props.altura}} />
      )
   }
 }
