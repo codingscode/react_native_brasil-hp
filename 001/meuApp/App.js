@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 
 
-function App() {
-   return (
-      <View>
-         <Text>OLá pessoas! 2 teste</Text>
-      </View>
-   )
+class App extends Component {
+  render() {
+     return (
+        <View>
+           <Text>mais testes!</Text>
+        </View>
+     )
+  }
 }
+
 
 export default App
