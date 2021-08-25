@@ -15,16 +15,16 @@ class App extends Component {
       this.entrar = this.entrar.bind(this)
    }
  
-   entrar() {
+   entrar(valor) {
       this.setState({
-        nome: 'Bob'
+        nome: valor
       })
    }
  
    render() {
       return (
          <View style={{ marginTop: 20 }} >
-            <Button title="entrar" onPress={this.entrar} />
+            <Button title="entrar" onPress={() => this.entrar('Jack')} />
             <Text style={{ fontSize: 23, color: 'red', textAlign: 'center' }} >{this.state.nome}</Text>
  
          </View>
