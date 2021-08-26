@@ -10,9 +10,10 @@ class App extends Component {
  
    render() {
       return (
-         <View style={{backgroundColor: 'orange'}} >
-            <View style={{width: 50, height: 50, backgroundColor: 'green'}} ></View>   
-            <Text>Sou um texto.</Text>
+         <View style={{ backgroundColor: 'orange', flex: 1}} >
+            <View style={{flex: 1, width: 50, height: 50, backgroundColor: 'green'}} ></View>   
+            <View style={{flex: 1, width: 50, height: 50, backgroundColor: 'purple'}} ></View>   
+            
          </View>
       )
    }

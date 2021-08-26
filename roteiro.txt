@@ -20,6 +20,6 @@ idem
 
 aplicando dois estilos ao mesmo tempo
 
-
+ocupa todo espaço disponivel
 
 
