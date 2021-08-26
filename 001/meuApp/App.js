@@ -10,12 +10,20 @@ class App extends Component {
       this.state = {
          nome: 'aladin'
       }
+
+      this.pegaNome = this.pegaNome.bind(this)
+
+      
+   }
+   
+   pegaNome(texto) {
+      this.setState({nome: texto})
    }
    
    render() {
       return (
          <View style={estilos.container}  >
-            <TextInput style={estilos.entrada} />
+            <TextInput style={estilos.entrada} placeholder="digite algo" underLineColorAndroid="transparent" onChangeText={this.pegaNome} />
             <Text style={estilos.texto} >{this.state.nome}</Text>
 
          </View>

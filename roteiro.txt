@@ -30,6 +30,8 @@ alinha no meio verticalmente.  ver flex-end e flex-start    commit anterior
 
 criando a entrada
 
+agora aparece em baixo o que é digitado em cima
+
 
 
 
