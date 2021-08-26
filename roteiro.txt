@@ -26,7 +26,8 @@ flex: 1, é o peso de distribuição de espaço
 
  {/* ver flex-end e flex-start, space-around */}  commit anterior
 
-alinha no meio verticalmente
+alinha no meio verticalmente.  ver flex-end e flex-start    commit anterior
+
 
 
 
