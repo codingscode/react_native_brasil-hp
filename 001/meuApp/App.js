@@ -47,7 +47,7 @@ const estilos = StyleSheet.create({
       flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center'
    },
    btnTexto: {
-
+      fontSize: 18, fontWeight: 'bold', color: 'green'
    }
 })
 
