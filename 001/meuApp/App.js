@@ -1,25 +1,29 @@
 import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, TextInput, StyleSheet } from 'react-native'
 
 
 
 class App extends Component {
    
-
-
  
    render() {
       return (
-         <View style={{ flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}} >
-            <View style={{width: 50, height: 50, backgroundColor: 'lightgreen'}} ></View>   
-            <View style={{width: 50, height: 50, backgroundColor: 'purple'}} ></View>   
-            <View style={{width: 50, height: 50, backgroundColor: 'yellow'}} ></View>   
-            <View style={{width: 50, height: 50, backgroundColor: 'lightblue'}} ></View>   
+         <View style={estilos.container}  >
+            <TextInput style={estilos.entrada} />
             
          </View>
       )
    }
 }
+
+const estilos = StyleSheet.create({
+   container: {
+      flex: 1
+   },
+   entrada: {
+      height: 45, borderWidth: 1, borderColor: '#222', margin: 10, fontSize: 20, padding: 10
+   }
+})
 
 
 
