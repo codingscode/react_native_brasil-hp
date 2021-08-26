@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, TextInput, StyleSheet, Button, Image } from 'react-native'
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, Image } from 'react-native'
 
 
 
@@ -14,6 +14,12 @@ class App extends Component {
       return (
          <View style={estilos.container}  >
             <Image source={require('./src/biscoito.png')} style={estilos.imagem} />
+            <Text>" Alguma frase aqui "</Text>
+            <TouchableOpacity>
+               <View>
+                  <Text>quebrar biscoitos</Text>
+               </View>   
+            </TouchableOpacity>            
 
          </View>
       )
