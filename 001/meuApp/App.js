@@ -8,16 +8,20 @@ class App extends Component {
    constructor(props) {
       super(props)
       this.state = {
-         nome: 'aladin'
+         nome: ''
       }
 
       this.pegaNome = this.pegaNome.bind(this)
-
       
    }
-   
+
    pegaNome(texto) {
-      this.setState({nome: texto})
+      if (texto.length > 0) {
+         this.setState({nome: `bem vindo: ${texto}`})
+      }
+      else {
+         this.setState({nome: ''})
+      }
    }
    
    render() {
