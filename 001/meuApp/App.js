@@ -4,17 +4,31 @@ import { View, Text, TextInput, StyleSheet, TouchableOpacity, Image } from 'reac
 
 
 class App extends Component {
+   constructor(props) {
+      super(props)
+      this.state = {
+         textoFrase: 'Siga os bons e aprenda com eles.'
+      }
+
+      this.frases = [
+            'Siga os bons e aprenda com eles.', 
+            'O bom-senso vale mais do que muito conhecimento.', 
+            'O riso é a menor distância entre duas pessoas.', 
+            'Deixe de lado as preocupações e seja feliz.',
+            'Realize o óbvio, pense no improvável e conquiste o impossível.',
+            'Acredite em milagres, mas não dependa deles.',
+            'A maior barreira para o sucesso é o medo do fracasso.'
+      ]
+
+   }
    
-  
-   
-  
    
    
    render() {
       return (
          <View style={estilos.container}  >
             <Image source={require('./src/biscoito.png')} style={estilos.imagem} />
-            <Text style={estilos.textoFrase} >" Alguma frase aqui "</Text>
+            <Text style={estilos.textoFrase} >{this.state.textoFrase}</Text>
             <TouchableOpacity style={estilos.botao} >
                <View style={estilos.btnArea} >
                   <Text style={estilos.btnTexto} >quebrar biscoitos</Text>
