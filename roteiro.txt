@@ -9,8 +9,8 @@ no terminal da pasta:
     npx react-native init meuApp
     
     2 comandos juntos:
-    npx react-native run-android   // executar depois de abrir o emulador
     npm start
+    npx react-native run-android   // executar depois de abrir o emulador
 
 
 
