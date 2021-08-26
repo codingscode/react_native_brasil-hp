@@ -38,10 +38,10 @@ const estilos = StyleSheet.create({
       width: 250, height: 250
    },
    textoFrase: {
-
+      fontSize: 20, color: '#dd7b22', margin: 30, fontStyle: 'italic', textAlign: 'center'
    },
    botao: {
-
+      width: 230, height: 50, borderWidth: 2, borderColor: '#dd7b22', borderRadius: 25
    },
    btnArea: {
 
