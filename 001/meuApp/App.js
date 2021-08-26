@@ -11,9 +11,9 @@ class App extends Component {
    render() {
       return (
          <View style={estilos.area} >
-            <Text>texto 1</Text>
+            <Text style={estilos.textoPrincipal} >texto 1</Text>
             <Text>texto 2</Text>
-            <Text>texto 3</Text>
+            <Text style={estilos.alinhaTexto} >texto 3</Text>
             <Text>texto 4</Text>
             
          </View>
@@ -22,7 +22,13 @@ class App extends Component {
 }
 
 const estilos = StyleSheet.create({
-   area: { marginTop: 40 }
+   area: { marginTop: 40 },
+   textoPrincipal: {
+      fontSize: 25, color: 'green'
+   },
+   alinhaTexto: {
+      textAlign: 'center'
+   }
 })
 
 
