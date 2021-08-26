@@ -38,6 +38,7 @@ a imagem aparece
 
 texto clicavel
 
+centraliza a imagem
 
 
 

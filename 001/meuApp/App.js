@@ -14,10 +14,10 @@ class App extends Component {
       return (
          <View style={estilos.container}  >
             <Image source={require('./src/biscoito.png')} style={estilos.imagem} />
-            <Text>" Alguma frase aqui "</Text>
-            <TouchableOpacity>
-               <View>
-                  <Text>quebrar biscoitos</Text>
+            <Text style={estilos.textoFrase} >" Alguma frase aqui "</Text>
+            <TouchableOpacity style={estilos.botao} >
+               <View style={estilos.btnArea} >
+                  <Text style={estilos.btnTexto} >quebrar biscoitos</Text>
                </View>   
             </TouchableOpacity>            
 
@@ -26,12 +26,28 @@ class App extends Component {
    }
 }
 
+/* 
+
+*/
+
 const estilos = StyleSheet.create({
    container: {
-      flex: 1
+      flex: 1, alignItems: 'center', justifyContent: 'center'
    },
    imagem: {
       width: 250, height: 250
+   },
+   textoFrase: {
+
+   },
+   botao: {
+
+   },
+   btnArea: {
+
+   },
+   btnTexto: {
+
    }
 })
 
