@@ -16,6 +16,10 @@ class App extends Component {
    }
    
    entrar() {
+      if (this.state.entrada === '') {
+         alert('deve digitar algo')
+         return
+      }
       this.setState({nome: this.state.entrada})   
    }
 
