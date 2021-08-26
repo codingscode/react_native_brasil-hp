@@ -32,6 +32,8 @@ criando a entrada
 
 agora aparece em baixo o que é digitado em cima
 
+só aparece se clicar no botão
+
 
 
 
