@@ -11,7 +11,7 @@ class App extends Component {
    render() {
       return (
          <View style={estilos.area} >
-            <Text style={estilos.textoPrincipal} >texto 1</Text>
+            <Text style={[estilos.textoPrincipal, estilos.alinhaTexto]} >texto 1</Text>
             <Text>texto 2</Text>
             <Text style={estilos.alinhaTexto} >texto 3</Text>
             <Text>texto 4</Text>

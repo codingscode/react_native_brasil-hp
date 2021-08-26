@@ -18,7 +18,7 @@ clicando em entrar altera o nome
 idem
 
 
-
+aplicando dois estilos ao mesmo tempo
 
 
 
