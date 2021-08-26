@@ -24,4 +24,4 @@ ocupa todo espaço disponivel
 
 flex: 1, é o peso de distribuição de espaço
 
-
+ {/* ver flex-end e flex-start */}  commit anterior
