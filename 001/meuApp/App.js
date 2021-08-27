@@ -7,7 +7,8 @@ class App extends Component {
    constructor(props) {
       super(props)
       this.state = {
-         textoFrase: 'Siga os bons e aprenda com eles.'
+         textoFrase: '',
+         imagem: require('./src/biscoito.png')
       }
 
       this.frases = [
@@ -20,16 +21,24 @@ class App extends Component {
             'A maior barreira para o sucesso é o medo do fracasso.'
       ]
 
+      this.quebraBiscoito = this.quebraBiscoito.bind(this)
+
    }
    
-   
+   quebraBiscoito() {
+      let numeroAleatorio = Math.floor(Math.random() * this.frases.length)
+
+      this.setState({
+         textoFrase: this.frases[numeroAleatorio]
+      })
+   }
    
    render() {
       return (
          <View style={estilos.container}  >
-            <Image source={require('./src/biscoito.png')} style={estilos.imagem} />
+            <Image source={this.state.imagem} style={estilos.imagem} />
             <Text style={estilos.textoFrase} >{this.state.textoFrase}</Text>
-            <TouchableOpacity style={estilos.botao} >
+            <TouchableOpacity style={estilos.botao} onPress={this.quebraBiscoito} >
                <View style={estilos.btnArea} >
                   <Text style={estilos.btnTexto} >quebrar biscoitos</Text>
                </View>   

@@ -40,7 +40,7 @@ texto clicavel
 
 centraliza a imagem
 
-
+gera frases aleatorias
 
 
 
