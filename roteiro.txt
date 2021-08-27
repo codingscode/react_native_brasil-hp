@@ -42,6 +42,8 @@ centraliza a imagem
 
 gera frases aleatorias
 
+aparece a imagem do biscoito quebrado
+
 
 
 
