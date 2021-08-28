@@ -32,27 +32,33 @@ class App extends Component {
 
 */
 
-const estilos = StyleSheet.create({
-   container: {
-      flex: 1
-   }
- 
-
-})
 
 class Pessoa extends Component {
    render() {
       return(
-         <View>
-            <Text>Nome: {this.props.data.nome}</Text>
-            <Text>Idade: {this.props.data.idade}</Text>
-            <Text>Email: {this.props.data.email}</Text>
+         <View style={estilos.areaPessoa} >
+            <Text style={estilos.areaTexto} >Nome: {this.props.data.nome}</Text>
+            <Text style={estilos.areaTexto} >Idade: {this.props.data.idade}</Text>
+            <Text style={estilos.areaTexto} >Email: {this.props.data.email}</Text>
          </View>
       )
    }
 }
 
 
+const estilos = StyleSheet.create({
+   container: {
+      flex: 1
+   },
+   areaPessoa: {
+      backgroundColor: 'lightblue', height: 200, marginBottom: 15
+   },
+   textoArea: {
+      color: '#FFF', fontSize: 20
+   }
+ 
+
+})
 
 
 export default App
