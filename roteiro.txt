@@ -52,7 +52,7 @@ já consegue pausar
 
 o nome do botão alterna
 
-
+no commit anterior já limpa/para a contagem
 
 
 
