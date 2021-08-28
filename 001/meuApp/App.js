@@ -10,14 +10,24 @@ class App extends Component {
         numero: 0
       }
    
+      this.timer = null
+
       this.vai = this.vai.bind(this)
       this.limpar = this.limpar.bind(this)
    }
 
    vai() {
-      setInterval(() => {
-         this.setState({numero: this.state.numero + 0.1})
-      }, 100)
+      if (this.timer != null) {
+         clearInterval(this.timer)
+         this.timer = null
+      }
+      else {
+         this.timer = setInterval(() => {
+            this.setState({numero: this.state.numero + 0.1})
+         }, 100)
+      
+      }
+   
    }
    
    limpar() {
