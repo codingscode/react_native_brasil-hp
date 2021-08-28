@@ -41,6 +41,12 @@ const estilos = StyleSheet.create({
    },
    timer: {
       marginTop: -160, color: '#FFF', fontSize: 65, fontWeight: 'bold'
+   },
+   btnArea: {
+      flexDirection: 'row', marginTop: 70, height: 40
+   },
+   btn: {
+      flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#FFF', height: 40, margin: 17, borderRadius: 9
    }
 
 })
