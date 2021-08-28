@@ -7,7 +7,7 @@ class App extends Component {
    constructor(props) {
       super(props)
       this.state = {
-        numero: 0, botao: 'vai'
+        numero: 0, botao: 'vai', ultimo_tempo: null
       }
    
       this.timer = null
@@ -60,6 +60,9 @@ class App extends Component {
                   </Text>
                </TouchableOpacity>
             </View>
+            <View style={estilos.areaUltima} >
+               <Text style={estilos.textoCorrida} >Último tempo: {this.state.ultimo_tempo}</Text>
+            </View>
          </View>
       )
    }
@@ -84,6 +87,12 @@ const estilos = StyleSheet.create({
    },
    btnTexto: {
       fontSize: 20, fontWeight: 'bold', color: 'lightblue'
+   },
+   areaUltima: {
+      marginTop: 40
+   },
+   textoCorrida: {
+      fontSize: 25, fontStyle: 'italic', color: '#FFF'
    }
 
 })
