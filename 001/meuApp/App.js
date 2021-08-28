@@ -38,6 +38,9 @@ class App extends Component {
 const estilos = StyleSheet.create({
    container: {
       flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'lightblue'
+   },
+   timer: {
+      marginTop: -160, color: '#FFF', fontSize: 65, fontWeight: 'bold'
    }
 
 })
