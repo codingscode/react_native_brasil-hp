@@ -1,26 +1,27 @@
 import React, { Component } from 'react'
-import { View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, Image, FlatList } from 'react-native'
 
 
 
 class App extends Component {
+   constructor(props) {
+      super(props)
+      this.state = {
+         feed: [
+            {nome: 'aladin', idade: 3, email: 'aladin@gmail'},
+            {nome: 'mel', idade: 2, email: 'mel@yahoo.com'},
+            {nome: 'apolo', idade: 10, email: 'apolo@hotmail'},
+            {nome: 'nina', idade: 1, email: 'aladin@outlook.com'},
+         ]
+      }
+   }
    
-
-   
-   
-   
-   
+      
    
    render() {
       return (
          <View style={estilos.container}  >
-            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
-               <View style={estilos.box1} ></View>
-               <View style={estilos.box2} ></View>
-               <View style={estilos.box3} ></View>
-               <View style={estilos.box4} ></View>
-
-            </ScrollView>
+            <FlatList data={this.state.feed} renderItem={({item}) => <Pessoa data={item} />} />
             
          </View>
       )
@@ -34,22 +35,20 @@ class App extends Component {
 const estilos = StyleSheet.create({
    container: {
       flex: 1
-   },
-   box1: {
-      backgroundColor: 'orange', height: 250, width: 230
-   },
-   box2: {
-      backgroundColor: 'lightgreen', height: 250, width: 230
-   },
-   box3: {
-      backgroundColor: 'lightblue', height: 250, width: 230
-   },
-   box4: {
-      backgroundColor: 'purple', height: 250, width: 230
    }
  
 
 })
+
+class Pessoa extends Component {
+   render() {
+      return(
+         <View>
+            <Text>{this.props.data.nome}</Text>
+         </View>
+      )
+   }
+}
 
 
 

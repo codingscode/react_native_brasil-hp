@@ -64,7 +64,7 @@ impede scrolar
 
 scrola na horizontal
 
-
+o parametro tem que ser item mesmo
 
 
 
