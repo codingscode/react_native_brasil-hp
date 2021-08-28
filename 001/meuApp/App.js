@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Image } from 'react-native'
+import { View, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native'
 
 
 
@@ -14,10 +14,13 @@ class App extends Component {
    render() {
       return (
          <View style={estilos.container}  >
-            <View style={estilos.box1} ></View>
-            <View style={estilos.box2} ></View>
-            <View style={estilos.box3} ></View>
-            <View style={estilos.box4} ></View>
+            <ScrollView>
+               <View style={estilos.box1} ></View>
+               <View style={estilos.box2} ></View>
+               <View style={estilos.box3} ></View>
+               <View style={estilos.box4} ></View>
+
+            </ScrollView>
             
          </View>
       )
