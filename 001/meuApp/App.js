@@ -7,11 +7,11 @@ class App extends Component {
    constructor(props) {
       super(props)
       this.state = {
-        numero: 0
+        numero: 0, botao: 'vai'
       }
    
       this.timer = null
-
+      
       this.vai = this.vai.bind(this)
       this.limpar = this.limpar.bind(this)
    }
@@ -20,12 +20,13 @@ class App extends Component {
       if (this.timer != null) {
          clearInterval(this.timer)
          this.timer = null
+         this.setState({botao: 'vai'})
       }
       else {
          this.timer = setInterval(() => {
             this.setState({numero: this.state.numero + 0.1})
          }, 100)
-      
+         this.setState({botao: 'parar'})
       }
    
    }
@@ -44,7 +45,7 @@ class App extends Component {
             <View style={estilos.btnArea} >
               <TouchableOpacity style={estilos.btn} onPress={this.vai} >
                   <Text style={estilos.btnTexto} >
-                     vai
+                     {this.state.botao}
                   </Text>
                </TouchableOpacity>
               <TouchableOpacity style={estilos.btn} onPress={this.limpar} >

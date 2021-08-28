@@ -50,6 +50,8 @@ o cronometro começa a aumentar
 
 já consegue pausar
 
+o nome do botão alterna
+
 
 
 
