@@ -46,6 +46,7 @@ aparece a imagem do biscoito quebrado
 
 projeto cronometro
 
+o cronometro começa a aumentar
 
 
 

@@ -10,6 +10,18 @@ class App extends Component {
         numero: 0
       }
    
+      this.vai = this.vai.bind(this)
+      this.limpar = this.limpar.bind(this)
+   }
+
+   vai() {
+      setInterval(() => {
+         this.setState({numero: this.state.numero + 0.1})
+      }, 100)
+   }
+   
+   limpar() {
+   
    }
    
    
@@ -20,12 +32,12 @@ class App extends Component {
             <Text style={estilos.timer} > {this.state.numero.toFixed(1)} </Text>            
             
             <View style={estilos.btnArea} >
-              <TouchableOpacity style={estilos.btn} >
+              <TouchableOpacity style={estilos.btn} onPress={this.vai} >
                   <Text style={estilos.btnTexto} >
                      vai
                   </Text>
                </TouchableOpacity>
-              <TouchableOpacity style={estilos.btn} >
+              <TouchableOpacity style={estilos.btn} onPress={this.limpar} >
                   <Text style={estilos.btnTexto} >
                      limpar
                   </Text>
