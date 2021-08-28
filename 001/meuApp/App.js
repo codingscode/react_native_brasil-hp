@@ -47,6 +47,9 @@ const estilos = StyleSheet.create({
    },
    btn: {
       flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#FFF', height: 40, margin: 17, borderRadius: 9
+   },
+   btnTexto: {
+      fontSize: 20, fontWeight: 'bold', color: 'lightblue'
    }
 
 })
