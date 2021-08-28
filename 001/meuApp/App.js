@@ -37,7 +37,7 @@ class App extends Component {
          this.timer = null
       }
       this.setState({
-         numero: 0, botao: 'vai', ultimo_tempo: this.state.numero.toFixed(1)
+         numero: 0, botao: 'vai', ultimo_tempo: this.state.numero
       })
    }
    
@@ -61,7 +61,9 @@ class App extends Component {
                </TouchableOpacity>
             </View>
             <View style={estilos.areaUltima} >
-               <Text style={estilos.textoCorrida} >Último tempo: {this.state.ultimo_tempo}</Text>
+               <Text style={estilos.textoCorrida} >
+               {this.state.ultimo_tempo > 0 ? `Último tempo: ${this.state.ultimo_tempo.toFixed(1)}s`: ''}
+               </Text>
             </View>
          </View>
       )
