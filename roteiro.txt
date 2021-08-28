@@ -60,7 +60,7 @@ não é possível ver todos os componentes
 
 é possível scrolar
 
-
+impede scrolar
 
 
 

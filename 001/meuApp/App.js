@@ -14,7 +14,7 @@ class App extends Component {
    render() {
       return (
          <View style={estilos.container}  >
-            <ScrollView showsVerticalScrollIndicator={false} >
+            <ScrollView scrollEnabled={false} >
                <View style={estilos.box1} ></View>
                <View style={estilos.box2} ></View>
                <View style={estilos.box3} ></View>
