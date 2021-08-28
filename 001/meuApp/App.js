@@ -32,7 +32,13 @@ class App extends Component {
    }
    
    limpar() {
-   
+      if (this.timer != null) {
+         clearInterval(this.timer)
+         this.timer = null
+      }
+      this.setState({
+         numero: 0
+      })
    }
    
    
