@@ -62,7 +62,7 @@ não é possível ver todos os componentes
 
 impede scrolar
 
-
+scrola na horizontal
 
 
 

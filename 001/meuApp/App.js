@@ -14,7 +14,7 @@ class App extends Component {
    render() {
       return (
          <View style={estilos.container}  >
-            <ScrollView scrollEnabled={false} >
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
                <View style={estilos.box1} ></View>
                <View style={estilos.box2} ></View>
                <View style={estilos.box3} ></View>
@@ -36,16 +36,16 @@ const estilos = StyleSheet.create({
       flex: 1
    },
    box1: {
-      backgroundColor: 'orange', height: 250
+      backgroundColor: 'orange', height: 250, width: 230
    },
    box2: {
-      backgroundColor: 'lightgreen', height: 250
+      backgroundColor: 'lightgreen', height: 250, width: 230
    },
    box3: {
-      backgroundColor: 'lightblue', height: 250
+      backgroundColor: 'lightblue', height: 250, width: 230
    },
    box4: {
-      backgroundColor: 'purple', height: 250
+      backgroundColor: 'purple', height: 250, width: 230
    }
  
 
