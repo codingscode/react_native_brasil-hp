@@ -4,15 +4,20 @@ import { View, Text, TextInput, StyleSheet, TouchableOpacity, Image } from 'reac
 
 
 class App extends Component {
+   constructor(props) {
+      super(props)
+      this.state = {
+        numero: 0
+      }
    
+   }
    
-
    
    render() {
       return (
          <View style={estilos.container}  >
             <Image source={require('./src/cronometro.png')} style={estilos.cronometro} />
-            <Text style={estilos.timer} >0.0</Text>            
+            <Text style={estilos.timer} > {this.state.numero.toFixed(1)} </Text>            
             
             <View style={estilos.btnArea} >
               <TouchableOpacity style={estilos.btn} >
