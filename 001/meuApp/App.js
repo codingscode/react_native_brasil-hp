@@ -37,7 +37,7 @@ class App extends Component {
          this.timer = null
       }
       this.setState({
-         numero: 0, botao: 'vai'
+         numero: 0, botao: 'vai', ultimo_tempo: this.state.numero.toFixed(1)
       })
    }
    
