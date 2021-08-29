@@ -33,8 +33,8 @@ class App extends Component {
                {pizzasItem}
             </Picker>
                         
-            <Text style={estilos.pizzas} >você escolheu: pizza calabresa</Text>
-            <Text style={estilos.pizzas} >R$: 59,90</Text>
+            <Text style={estilos.pizzas} >você escolheu: pizza {this.state.pizzas[this.state.pizza].nome}</Text>
+            <Text style={estilos.pizzas} >R$: {this.state.pizzas[this.state.pizza].valor}</Text>
             
          </View>
       )
