@@ -78,7 +78,8 @@ mostra o valor de value
  
 forma dinamica
 
-
+no terminal:
+   npm install @react-native-community/slider --save
 
 
 
