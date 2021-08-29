@@ -68,6 +68,8 @@ o parametro tem que ser item mesmo
 
 quebrando em componentes
 
+no terminal:
+   npm install @react-native-picker/picker
 
 
 
