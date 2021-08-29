@@ -83,7 +83,7 @@ no terminal:
 
 aparece uma linha deslizante
 
-
+mostra o valor
 
 
 

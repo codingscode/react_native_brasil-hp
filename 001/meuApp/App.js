@@ -8,7 +8,7 @@ class App extends Component {
    constructor(props) {
       super(props)
       this.state = {
-         
+         valor: 50
       }
    }
    
@@ -17,7 +17,10 @@ class App extends Component {
 
       return (
          <View style={estilos.container} >
-            <Slider minimumValue={0} maximumValue={100} />
+            <Slider minimumValue={0} maximumValue={100} 
+                    onValueChange={ (valorSelecionado) => this.setState({valor: valorSelecionado}) }
+                    value={this.state.valor} />
+            <Text style={{textAlign: 'center', fontSize: 30}} >{this.state.valor.toFixed(0)}</Text>
          </View>
       )
    }
