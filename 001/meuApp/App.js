@@ -15,11 +15,9 @@ class App extends Component {
    
    render() {
 
-     
-
       return (
          <View style={estilos.container} >
-            
+            <Slider minimumValue={0} maximumValue={100} />
          </View>
       )
    }

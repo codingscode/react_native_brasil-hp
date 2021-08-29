@@ -81,7 +81,7 @@ forma dinamica
 no terminal:
    npm install @react-native-community/slider --save
 
-
+aparece uma linha deslizante
 
 
 
