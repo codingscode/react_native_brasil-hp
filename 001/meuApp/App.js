@@ -1,30 +1,22 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, TouchableOpacity, Image, FlatList } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
-import Pessoa from './src/Pessoas/Pessoas'
 
 
 
 class App extends Component {
-   constructor(props) {
-      super(props)
-      this.state = {
-         feed: [
-            {id: 1, nome: 'aladin', idade: 3, email: 'aladin@gmail'},
-            {id: 2, nome: 'mel', idade: 2, email: 'mel@yahoo.com'},
-            {id: 3, nome: 'apolo', idade: 10, email: 'apolo@hotmail'},
-            {id: 4, nome: 'nina', idade: 1, email: 'aladin@outlook.com'},
-         ]
-      }
-   }
    
       
    
    render() {
       return (
-         <View style={estilos.container}  >
-            <FlatList keyExtractor={(item) => item.id} data={this.state.feed} renderItem={({item}) => <Pessoa data={item} />} />
+         <View style={estilos.container} >
+            <Text style={estilos.logo} >Menu Pizza</Text>
             
+            
+            
+            <Text style={estilos.pizzas} >você escolheu: pizza calabresa</Text>
+            <Text style={estilos.pizzas} >R$: 59,90</Text>
          </View>
       )
    }
@@ -36,12 +28,15 @@ class App extends Component {
 
 const estilos = StyleSheet.create({
    container: {
-      flex: 1
+      flex: 1, marginTop: 20
+   },
+   logo: {
+      textAlign: 'center', fontSize: 28, fontWeight: 'bold'
+   },
+   pizzas: {
+      marginTop: 15, fontSize: 28, textAlign: 'center'
    }
- 
-
 })
 
 
 export default App
-
