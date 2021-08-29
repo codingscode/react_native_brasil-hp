@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet, TouchableOpacity, Image, FlatList } from 'react-native'
 
+import Pessoa from './src/Pessoas/Pessoas'
+
 
 
 class App extends Component {
@@ -32,29 +34,9 @@ class App extends Component {
 
 */
 
-
-class Pessoa extends Component {
-   render() {
-      return(
-         <View style={estilos.areaPessoa} >
-            <Text style={estilos.areaTexto} >Nome: {this.props.data.nome}</Text>
-            <Text style={estilos.areaTexto} >Idade: {this.props.data.idade}</Text>
-            <Text style={estilos.areaTexto} >Email: {this.props.data.email}</Text>
-         </View>
-      )
-   }
-}
-
-
 const estilos = StyleSheet.create({
    container: {
       flex: 1
-   },
-   areaPessoa: {
-      backgroundColor: 'lightblue', height: 200, marginBottom: 15
-   },
-   textoArea: {
-      color: '#FFF', fontSize: 20
    }
  
 
