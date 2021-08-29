@@ -76,7 +76,7 @@ mostra opções de escolha
 
 mostra o valor de value
  
-
+forma dinamica
 
 
 
