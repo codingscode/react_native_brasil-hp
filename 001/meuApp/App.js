@@ -34,7 +34,7 @@ class App extends Component {
             </Picker>
                         
             <Text style={estilos.pizzas} >você escolheu: pizza {this.state.pizzas[this.state.pizza].nome}</Text>
-            <Text style={estilos.pizzas} >R$: {this.state.pizzas[this.state.pizza].valor}</Text>
+            <Text style={estilos.pizzas} >R$: {this.state.pizzas[this.state.pizza].valor.toFixed(2)}</Text>
             
          </View>
       )
