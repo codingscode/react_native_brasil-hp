@@ -20,7 +20,9 @@ class App extends Component {
       return (
          <View style={estilos.container} >
             <Switch value={this.state.status} onValueChange={(valorSwitch) => this.setState({status: valorSwitch})} />
-            <Text>{this.state.status.toString()}</Text>
+            <Text style={{textAlign: 'center', fontSize: 30}} >
+               {this.state.status ? 'ligado' : 'desligado'}
+            </Text>
          </View>
       )
    }
@@ -32,7 +34,7 @@ class App extends Component {
 
 const estilos = StyleSheet.create({
    container: {
-      marginTop: 15
+      marginTop: 21
    }
   
 })
