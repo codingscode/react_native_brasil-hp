@@ -19,7 +19,7 @@ class App extends Component {
          <View style={estilos.container} >
             <Slider minimumValue={0} maximumValue={100} 
                     onValueChange={ (valorSelecionado) => this.setState({valor: valorSelecionado}) }
-                    value={this.state.valor} />
+                    value={this.state.valor} minimumTrackTintColor="blue" maximumTrackTintColor="red" />
             <Text style={{textAlign: 'center', fontSize: 30}} >{this.state.valor.toFixed(0)}</Text>
          </View>
       )
