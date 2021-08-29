@@ -72,7 +72,7 @@ no terminal:
    npm install @react-native-picker/picker
 
 
-
+mostra opções de escolha
 
 
  
