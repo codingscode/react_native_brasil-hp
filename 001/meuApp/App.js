@@ -28,6 +28,7 @@ class App extends Component {
                         
             <Text style={estilos.pizzas} >você escolheu: pizza calabresa</Text>
             <Text style={estilos.pizzas} >R$: 59,90</Text>
+            <Text style={{fontSize: 30}} >{this.state.pizza}</Text>
          </View>
       )
    }

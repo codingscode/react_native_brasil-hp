@@ -74,7 +74,7 @@ no terminal:
 
 mostra opções de escolha
 
-
+mostra o valor de value
  
 
 
