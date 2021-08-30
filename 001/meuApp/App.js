@@ -64,8 +64,12 @@ class App extends Component {
       return (
          <View style={estilos.container} >
             <View style={estilos.cabecalho} >
-               <Image source={require('./src/image2/logo.png')} style={estilos.logo} />
-               <Image source={require('./src/image2/send.png')} style={estilos.enviar} />
+               <TouchableOpacity>
+                  <Image source={require('./src/image2/logo.png')} style={estilos.logo} />
+               </TouchableOpacity>
+               <TouchableOpacity>
+                  <Image source={require('./src/image2/send.png')} style={estilos.enviar} />
+               </TouchableOpacity>
 
             </View>
          </View>
