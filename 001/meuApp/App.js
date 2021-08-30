@@ -82,7 +82,9 @@ const estilos = StyleSheet.create({
       flex: 1
    },
    cabecalho: {
-      height: 55, backgroundColor: '#FFF', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 5
+      height: 55, backgroundColor: '#FFF', flexDirection: 'row', alignItems: 'center', 
+      justifyContent: 'space-between', padding: 5, borderBottomWidth: 0.2, shadowColor: '#000', 
+      elevation: 1
    },
    enviar: {
       width: 23, height: 23
