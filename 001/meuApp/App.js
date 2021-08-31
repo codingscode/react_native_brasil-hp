@@ -8,7 +8,7 @@ class App extends Component {
    constructor(props) {
       super(props)
       this.state = {
-         input: '', nome: ''
+         input: 'wqeqwe', nome: 'aldin'
       }
 
    }
@@ -18,13 +18,13 @@ class App extends Component {
 
       return (
          <View style={estilos.container} >
-            <View>
+            <View style={estilos.viewInput} >
                <TextInput style={estilos.input} value={this.state.input} onChangeText={(texto) => this.setState({input: texto})} underLineColorAndroid="transparent" />
                <TouchableOpacity>
                   <Text style={estilos.botao} >+</Text>
                </TouchableOpacity>
             </View>  
-
+            <Text style={estilos.nome} >{this.state.nome}</Text>
          </View>
       )
    }
@@ -36,7 +36,19 @@ class App extends Component {
 
 const estilos = StyleSheet.create({
    container: {
-      flex: 1
+      flex: 1, marginTop: 20, alignItems: 'center'
+   },
+   viewInput: {
+      flexDirection: 'row', alignItems: 'center'
+   },
+   input: {
+      width: 350, height: 40, borderColor: '#000', borderWidth: 1, padding: 10
+   },
+   botao: {
+      backgroundColor: '#222', color: '#FFF', height: 40, padding: 10, marginLeft: 4
+   },
+   nome: {
+      fontSize: 30, textAlign: 'center'
    }
   
 })
