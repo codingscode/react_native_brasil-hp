@@ -17,7 +17,13 @@ class Lista extends Component {
                <Image source={{uri: this.state.feed.imgperfil}} style={estilos.fotoPerfil} />
                <Text style={estilos.nomeUsuario} >{this.state.feed.nome}</Text>
             </View>
-            <Image style={estilos.fotoPublicacao} source={{uri: this.state.feed.imgPublicacao}} />
+            <Image resizeMode="cover" style={estilos.fotoPublicacao} 
+                   source={{uri: this.state.feed.imgPublicacao}} />
+            <View >
+               <TouchableOpacity >
+                  <Image source={require('../image2/like.png')} style={estilos.iconelike}  />
+               </TouchableOpacity>
+            </View>
          </View>
       
       )
