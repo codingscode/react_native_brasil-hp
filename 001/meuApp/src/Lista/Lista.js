@@ -20,7 +20,7 @@ class Lista extends Component {
       }
       
       return (
-         <Text>
+         <Text style={estilos.likes} >
             {feed.likers} {feed.likers > 1 ? 'curtidas' : 'curtida'}
          </Text>
       )
@@ -95,7 +95,11 @@ const estilos = StyleSheet.create({
    },
    nomeRodape: {
       fontSize: 18, fontWeight: 'bold', color: '#000', paddingLeft: 5
+   },
+   likes: {
+      fontWeight: 'bold', marginLeft: 5
    }
+
 
 })
 
