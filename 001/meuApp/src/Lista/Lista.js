@@ -34,7 +34,12 @@ const estilos = StyleSheet.create({
    },
    fotoPerfil: {
       width: 50, height: 50, borderRadius: 25
+   },
+   viewPerfil: {
+      flexDirection: 'row', flex: 1, alignItems: 'center', padding: 8
    }
+
+
 })
 
 export default Lista
