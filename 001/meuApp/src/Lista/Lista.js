@@ -17,6 +17,7 @@ class Lista extends Component {
                <Image source={{uri: this.state.feed.imgperfil}} style={estilos.fotoPerfil} />
                <Text style={estilos.nomeUsuario} >{this.state.feed.nome}</Text>
             </View>
+            <Image style={estilos.fotoPublicacao} source={{uri: this.state.feed.imgPublicacao}} />
          </View>
       
       )
@@ -25,7 +26,15 @@ class Lista extends Component {
 }
 
 const estilos = StyleSheet.create({
+   areaFeed: {
 
+   },
+   nomeUsuario: {
+      fontSize: 22, textAlign: 'left', color: '#000000'
+   },
+   fotoPerfil: {
+      width: 50, height: 50, borderRadius: 25
+   }
 })
 
 export default Lista
