@@ -27,6 +27,14 @@ class Lista extends Component {
                   <Image source={require('../image2/send.png')} style={estilos.iconelike}  />
                </TouchableOpacity>
             </View>
+            <View style={estilos.viewRodape} >
+               <Text style={estilos.nomeRodape} >
+                  {this.state.feed.nome}
+               </Text>
+               <Text style={estilos.descRodape} >
+                  {this.state.feed.descricao}
+               </Text>
+            </View>
          </View>
       
       )
