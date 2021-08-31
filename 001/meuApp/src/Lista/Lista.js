@@ -37,6 +37,9 @@ const estilos = StyleSheet.create({
    },
    viewPerfil: {
       flexDirection: 'row', flex: 1, alignItems: 'center', padding: 8
+   },
+   fotoPublicacao: {
+      flex: 1, height: 400, alignItems: 'center'
    }
 
 
