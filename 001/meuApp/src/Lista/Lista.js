@@ -19,14 +19,14 @@ class Lista extends Component {
       if (feed.likeada === true) {
          this.setState({
             feed: {
-               likeada: false, likers: feed.likers - 1
+               ...feed, likeada: false, likers: feed.likers - 1
             }
          })
       }
       else {
          this.setState({
             feed: {
-               likeada: true, likers: feed.likers + 1
+               ...feed, likeada: true, likers: feed.likers + 1
             }
          })
       }
