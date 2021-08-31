@@ -8,6 +8,21 @@ class Lista extends Component {
       this.state = {
          feed: this.props.data
       }
+
+      this.mostraLikes = this.mostraLikes.bind(this)
+   }
+
+   mostraLikes(likers) {
+      let feed = this.state.feed
+      
+      if (feed.likers <= 0) {
+         return
+      }
+      
+      return (
+         <Text> {feed.likers} </Text>
+      )
+   
    }
  
    render() {
@@ -27,6 +42,9 @@ class Lista extends Component {
                   <Image source={require('../image2/send.png')} style={estilos.iconelike}  />
                </TouchableOpacity>
             </View>
+
+            {this.mostraLikes(this.state.feed.likers)}
+
             <View style={estilos.viewRodape} >
                <Text style={estilos.nomeRodape} >
                   {this.state.feed.nome}
