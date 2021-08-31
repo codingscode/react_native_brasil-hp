@@ -10,6 +10,27 @@ class Lista extends Component {
       }
 
       this.mostraLikes = this.mostraLikes.bind(this)
+      this.like = this.like.bind(this)
+   }
+
+   like() {
+      let feed = this.state.feed
+
+      if (feed.likeada === true) {
+         this.setState({
+            feed: {
+               likeada: false, likers: feed.likers - 1
+            }
+         })
+      }
+      else {
+         this.setState({
+            feed: {
+               likeada: true, likers: feed.likers + 1
+            }
+         })
+      }
+
    }
 
    mostraLikes(likers) {
@@ -37,7 +58,7 @@ class Lista extends Component {
             <Image resizeMode="cover" style={estilos.fotoPublicacao} 
                    source={{uri: this.state.feed.imgPublicacao}} />
             <View style={estilos.areaBtn} >
-               <TouchableOpacity >
+               <TouchableOpacity onPress={this.like} >
                   <Image source={require('../image2/like.png')} style={estilos.iconelike}  />
                </TouchableOpacity>
                <TouchableOpacity style={estilos.btnSend} >
