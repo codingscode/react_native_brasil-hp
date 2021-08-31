@@ -66,6 +66,15 @@ const estilos = StyleSheet.create({
    },
    btnSend: {
       paddingLeft: 7
+   },
+   viewRodape: {
+      flexDirection: 'row', alignItems: 'center'
+   },
+   descRodape: {
+      paddingLeft: 5, fontSize: 15, color: '#000'
+   },
+   nomeRodape: {
+      fontSize: 18, fontWeight: 'bold', color: '#000', paddingLeft: 5
    }
 
 })
