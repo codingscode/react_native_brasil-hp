@@ -98,6 +98,10 @@ o coração muda de cor
 
 --------------------------- 
 
+no terminal:
+   npm install @react-native-community/async-storage --save
+
+
 
 
 
