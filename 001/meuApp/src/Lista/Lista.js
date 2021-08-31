@@ -11,6 +11,7 @@ class Lista extends Component {
 
       this.mostraLikes = this.mostraLikes.bind(this)
       this.like = this.like.bind(this)
+      this.carregaIcone = this.carregaIcone.bind(this)
    }
 
    like() {
@@ -47,6 +48,11 @@ class Lista extends Component {
       )
    
    }
+
+   carregaIcone(likeada) {
+      return likeada ? require('../image2/likeada.png') : require('../image2/like.png')
+   }
+
  
    render() {
       return (
@@ -59,7 +65,7 @@ class Lista extends Component {
                    source={{uri: this.state.feed.imgPublicacao}} />
             <View style={estilos.areaBtn} >
                <TouchableOpacity onPress={this.like} >
-                  <Image source={require('../image2/like.png')} style={estilos.iconelike}  />
+                  <Image source={this.carregaIcone(this.state.feed.likeada)} style={estilos.iconelike}  />
                </TouchableOpacity>
                <TouchableOpacity style={estilos.btnSend} >
                   <Image source={require('../image2/send.png')} style={estilos.iconelike}  />
