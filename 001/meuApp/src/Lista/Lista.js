@@ -19,9 +19,12 @@ class Lista extends Component {
             </View>
             <Image resizeMode="cover" style={estilos.fotoPublicacao} 
                    source={{uri: this.state.feed.imgPublicacao}} />
-            <View >
+            <View style={estilos.areaBtn} >
                <TouchableOpacity >
                   <Image source={require('../image2/like.png')} style={estilos.iconelike}  />
+               </TouchableOpacity>
+               <TouchableOpacity style={estilos.btnSend} >
+                  <Image source={require('../image2/send.png')} style={estilos.iconelike}  />
                </TouchableOpacity>
             </View>
          </View>
@@ -46,8 +49,16 @@ const estilos = StyleSheet.create({
    },
    fotoPublicacao: {
       flex: 1, height: 400, alignItems: 'center'
+   },
+   areaBtn: {
+      flexDirection: 'row', padding: 5
+   },
+   iconelike: {
+      width: 33, height: 33
+   },
+   btnSend: {
+      paddingLeft: 7
    }
-
 
 })
 
