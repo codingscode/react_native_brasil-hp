@@ -102,7 +102,7 @@ no terminal:
    npm install @react-native-community/async-storage --save
 
 
-
+armazena o valor criado antes na key 'nome'. Fechando e abrindo o app novamente o valor continua guardado.
 
 
 

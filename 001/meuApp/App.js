@@ -23,9 +23,11 @@ class App extends Component {
       Keyboard.dismiss()  // garante que o teclado fecha
    }
 
-   /* componentDidMount() {
-      alert('olá app.')
-   } */
+   async componentDidMount() {
+      await AsyncStorage.getItem('nome').then((valor) => {
+         this.setState({nome: valor})
+      })
+   }
    
    async componentDidUpdate(_, prevState) {
       const nome = this.state.nome
