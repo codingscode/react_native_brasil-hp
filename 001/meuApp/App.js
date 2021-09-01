@@ -28,7 +28,7 @@ class App extends Component {
       return (
          <View style={estilos.container} >
             <Button title="Entrar" onPress={this.entrar} />
-            <Modal animationType="slide" visible={this.state.modalVisivel} >
+            <Modal animationType="fade" visible={this.state.modalVisivel} >
                <View style={{backgroundColor: 'lightblue', flex: 1}} >
                   <Text style={{color: 'orange', fontSize: 28}} >Seja Bem-vindo!</Text>
                   <Button title="Sair" onPress={() => this.sair(false)} />
