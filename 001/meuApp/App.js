@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet, Platform, Button, Modal } from 'react-native'
 
 
+import Entrar from './src/Entrar/Entrar'
+
 
 class App extends Component {
    constructor(props) {
@@ -29,10 +31,7 @@ class App extends Component {
          <View style={estilos.container} >
             <Button title="Entrar" onPress={this.entrar} />
             <Modal transparent={true} animationType="slide" visible={this.state.modalVisivel} >
-               <View style={{backgroundColor: 'lightblue', height: 350, width: '100%'}} >
-                  <Text style={{color: 'orange', fontSize: 28}} >Seja Bem-vindo!</Text>
-                  <Button title="Sair" onPress={() => this.sair(false)} />
-               </View>
+               <Entrar sair={() => this.sair(false)} />
             </Modal>
 
          </View>

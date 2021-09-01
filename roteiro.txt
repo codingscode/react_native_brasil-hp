@@ -112,7 +112,7 @@ aparece o modal
 
 correção nome errado
 
-
+quebrando em componentes
 
 
 
