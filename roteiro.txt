@@ -104,6 +104,72 @@ no terminal:
 
 armazena o valor criado antes na key 'nome'. Fechando e abrindo o app novamente o valor continua guardado.
 
+----------------------------
+
+modais
+
+aparece o modal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
