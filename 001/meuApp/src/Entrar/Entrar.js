@@ -9,14 +9,13 @@ class Entrar extends Component {
    render() {
 
       return (
-         <View style={{backgroundColor: 'lightblue', height: 350, width: '100%', borderRadius: 15}} >
-            <Text style={{paddingTop: 15, color: 'orange', fontSize: 28}} >Seja Bem-vindo!</Text>
+         <View style={{backgroundColor: 'lightblue', height: 350, width: '100%', borderRadius: 15 }} >
+            <Text style={{paddingTop: 15, color: 'orange', fontSize: 28, textAlign: 'center'}} >Seja Bem-vindo!</Text>
             <Button title="Sair" onPress={this.props.sair} />
          </View>
       )
    }
 }
-
 
 
 export default Entrar

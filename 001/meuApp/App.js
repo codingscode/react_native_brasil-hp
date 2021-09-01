@@ -31,7 +31,10 @@ class App extends Component {
          <View style={estilos.container} >
             <Button title="Entrar" onPress={this.entrar} />
             <Modal transparent={true} animationType="slide" visible={this.state.modalVisivel} >
-               <Entrar sair={() => this.sair(false)} />
+               <View style={{margin: 15, flex: 1, alignItems: 'center', justifyContent: 'center'}} >
+                  <Entrar sair={() => this.sair(false)} />
+
+               </View>
             </Modal>
 
          </View>
