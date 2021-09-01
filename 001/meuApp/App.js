@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, Image, TouchableOpacity, FlatList, TextInput } from 'react-native'
+import { View, Text, StyleSheet, Image, TouchableOpacity, Keyboard, TextInput } from 'react-native'
 
 import AsyncStorage from '@react-native-community/async-storage'
 
@@ -13,14 +13,14 @@ class App extends Component {
       }
 
       this.gravaNome = this.gravaNome.bind(this)
-
    }
-
+   
    gravaNome() {
       this.setState({
          nome: this.state.input
       })
       alert('Salvo com sucesso!')
+      Keyboard.dismiss()  // garante que o teclado fecha
    }
 
    
