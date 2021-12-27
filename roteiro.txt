@@ -115,13 +115,14 @@ correção nome errado
 quebrando em componentes
 
 
+------------------------------
+
+no terminal da pasta:
+    npm i axios --save
+    
 
 
-
-
-
-
-
+https://sujeitoprogramador.com/r-api/?api=filmes
 
 
 
