@@ -10,7 +10,7 @@ class Filmes extends Component {
 
         return (
             <View>
-                <Text>...</Text>
+                <Text>{this.props.dados.nome}</Text>
             </View>
         )
 
