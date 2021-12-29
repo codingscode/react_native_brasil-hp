@@ -7,14 +7,15 @@ class Filmes extends Component {
 
 
     render() {
+        const { nome, foto } = this.props.dados
 
         return (
             <View>
                <View style={estilos.card} >
-                  <Text style={estilos.titulo} >{this.props.dados.nome}</Text>
-                  <Image source={{ uri: this.props.dados.foto }} style={estilos.capa} />
+                  <Text style={estilos.titulo} >{nome}</Text>
+                  <Image source={{ uri: foto }} style={estilos.capa} />
                   <View style={estilos.Areabotao} >
-                      <TouchableOpacity style={estilos.botao} onPress={() => alert(this.props.dados.nome)} >
+                      <TouchableOpacity style={estilos.botao} onPress={() => alert(nome)} >
                           <Text style={estilos.botaoTexto} >LEIA MAIS</Text>
                       </TouchableOpacity>
                   </View>

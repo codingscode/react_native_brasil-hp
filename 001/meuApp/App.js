@@ -11,7 +11,9 @@ class App extends Component {
       super(props)
       
       this.state = {
-         filmes: []
+         filmes: [],
+         carregando: true
+         
       }
       
    
@@ -20,19 +22,29 @@ class App extends Component {
    async componentDidMount() {
       const response = await api.get('r-api/?api=filmes')
       this.setState({
-         filmes: response.data
+         filmes: response.data, carregando: false
       })
    }
 
    
    render() {
+   
+      if (this.state.carregando) {
+         return (
+            <View>
+               <Text>Carregando...</Text>
+            </View>
+         )
+      }
+      else {
+         return (
+            <View style={estilos.container} >
+               <FlatList data={this.state.filmes} keyExtractor={item => item.id.toString()} renderItem={({item}) => <Filmes dados={item} /> } />
+            </View>
+         )
+      
+      }
 
-      return (
-         <View style={estilos.container} >
-            <Text>oie</Text>
-            <FlatList data={this.state.filmes} keyExtractor={item => item.id.toString()} renderItem={({item}) => <Filmes dados={item} /> } />
-         </View>
-      )
    }
 }
 
