@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, FlatList } from 'react-native'
+import { View, Text, StyleSheet, FlatList, ActivityIndicator } from 'react-native'
 
 import api from './src/services/api'
 import Filmes from './src/Filmes/Filmes'
@@ -31,8 +31,8 @@ class App extends Component {
    
       if (this.state.carregando) {
          return (
-            <View>
-               <Text>Carregando...</Text>
+            <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }} >
+               <ActivityIndicator color="#09A6FF" size={40} />
             </View>
          )
       }
