@@ -14,7 +14,7 @@ class Filmes extends Component {
                   <Text style={estilos.titulo} >{this.props.dados.nome}</Text>
                   <Image source={{ uri: this.props.dados.foto }} style={estilos.capa} />
                   <View style={estilos.Areabotao} >
-                      <TouchableOpacity style={estilos.botao} >
+                      <TouchableOpacity style={estilos.botao} onPress={() => alert(this.props.dados.nome)} >
                           <Text style={estilos.botaoTexto} >LEIA MAIS</Text>
                       </TouchableOpacity>
                   </View>
@@ -41,7 +41,14 @@ const estilos = StyleSheet.create({
    },
    Areabotao: {
       alignItems: 'flex-end', marginTop: -40, zIndex: 9
+   },
+   botao: {
+      width: 100, backgroundColor: '#09A6FF', opacity: 1, padding: 8, borderTopLeftRadius: 5, borderBottomLeftRadius: 5
+   },
+   botaoTexto: {
+      textAlign: 'center', color: '#FFF'
    }
+   
    
 })
 
