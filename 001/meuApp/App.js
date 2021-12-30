@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
 
+import Conversor from './src/Conversor/Conversor'
 
-
-
+// https://free.currconv.com/api/v7/convert?q=USD_PHP&compact=ultra&apiKey=217f52c14d405541a76e
 class App extends Component {
 
   
@@ -12,8 +12,8 @@ class App extends Component {
     
    render() {
       return (
-      <View  >
-         <Text>oie</Text>
+      <View style={estilos.container} >
+         <Conversor />
       </View>
 
       )
@@ -23,7 +23,7 @@ class App extends Component {
 
 const estilos = StyleSheet.create({
    container: {
-      flex: 1
+      flex: 1, justifyContent: 'center', alignItems: 'center'
    }
 
 })
