@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, Keyboard } from 'react-native'
 
 import api from '../services/api'
 
@@ -32,6 +32,8 @@ class Conversor extends Component {
       this.setState({
          valorConvertido: resultado.toFixed(2)
       })
+      
+      Keyboard.dismiss() // fecha o teclado automaticamente
    }
 
    
@@ -48,7 +50,7 @@ class Conversor extends Component {
            <Text style={estilos.botaoTexto} >Converter</Text>
         </TouchableOpacity>
         <Text style={estilos.valorConvertido} >
-           {this.state.valorConvertido}
+           {(this.state.valorConvertido === 0) ? '' : this.state.valorConvertido}
         </Text>
       </View>
       )
