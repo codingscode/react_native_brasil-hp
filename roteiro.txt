@@ -134,7 +134,7 @@ https://free.currencyconverterapi.com/
    key enviada para email
    
 
-
+clicando no botao converte imprime "{"USD_BRL": 5.571402}"
 
 
 
