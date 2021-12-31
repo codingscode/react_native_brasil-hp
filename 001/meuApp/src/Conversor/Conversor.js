@@ -26,7 +26,12 @@ class Conversor extends Component {
       let de_para = `${this.state.moedaA}_${this.state.moedaB}`
       const response = await api.get(`convert?q=${de_para}&compact=ultra&apiKey=217f52c14d405541a76e`)
       let cotacao = response.data[de_para]
-      console.log(cotacao)
+      
+      let resultado = (cotacao * parseFloat(this.state.moedaB_valor))
+      
+      this.setState({
+         valorConvertido: resultado.toFixed(2)
+      })
    }
 
    
