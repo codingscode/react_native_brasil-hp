@@ -8,12 +8,11 @@ import Conversor from './src/Conversor/Conversor'
 class App extends Component {
 
   
-
     
    render() {
       return (
       <View style={estilos.container} >
-         <Conversor />
+         <Conversor moedaA="USD" moedaB="BRL" />
       </View>
 
       )
