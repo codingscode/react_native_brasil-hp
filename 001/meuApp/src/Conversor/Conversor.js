@@ -7,27 +7,37 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-nativ
 class Conversor extends Component {
 
    constructor(props) {
-      super(props);
+      super(props)
       
       this.state = {
-      
+         moedaA: props.moedaA,
+         moedaB: props.moedaB,
+         moedaB_valor: 0,
+         valorConvertido: 0
       }
       
+      this.converter = this.converter.bind(this)
       
       
    }
+   
+   converter() {
+   
+   }
 
    render() {
+      const { moedaA, moedaB } = this.props
+
       return (
       <View style={estilos.container} >
-        <Text style={estilos.titulo} >USD para BRL</Text>
+        <Text style={estilos.titulo} >{moedaA} para {moedaB}</Text>
         <TextInput placeholder="Valor a ser convertido" style={estilos.areaEntrada} 
-                   onChangeText={()=>{}} keyboardType='numeric' />
-        <TouchableOpacity style={estilos.botaoArea} >
+                   onChangeText={(moedaB_valor)=> this.setState({moedaB_valor: moedaB_valor})} keyboardType='numeric' />
+        <TouchableOpacity style={estilos.botaoArea} onPress={this.converter} >
            <Text style={estilos.botaoTexto} >Converter</Text>
         </TouchableOpacity>
         <Text style={estilos.valorConvertido} >
-           10.90
+           {this.state.valorConvertido}
         </Text>
       </View>
       )
