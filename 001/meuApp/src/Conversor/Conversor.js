@@ -23,9 +23,13 @@ class Conversor extends Component {
    }
    
    async converter() {
-      const response = await api.get('convert?q=USD_BRL&compact=ultra&apiKey=217f52c14d405541a76e')
-      console.log(response.data)
+      let de_para = `${this.state.moedaA}_${this.state.moedaB}`
+      const response = await api.get(`convert?q=${de_para}&compact=ultra&apiKey=217f52c14d405541a76e`)
+      let cotacao = response.data[de_para]
+      console.log(cotacao)
    }
+
+   
 
    render() {
       const { moedaA, moedaB } = this.props
