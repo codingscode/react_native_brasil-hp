@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Animated } from 'react-native'
 
 
 
@@ -11,7 +11,7 @@ class App extends Component {
       super(props)
       
       this.state = {
-      
+         LarAnimada: 150, AltAnimada: 50
       }
       
    }
@@ -20,9 +20,9 @@ class App extends Component {
    render() {
       return (
       <View style={estilos.container} >
-         <View style={{ width: 250, height: 250, backgroundColor: '#4169F1', justifyContent: 'center'}}>
+         <Animated.View style={{ width: this.state.LarAnimada, height: this.state.AltAnimada, backgroundColor: '#4169F1', justifyContent: 'center'}}>
             <Text style={{ color: '#FFFFFF', fontSize: 22, textAlign: 'center' }} >Carregando...</Text>
-         </View>
+         </Animated.View>
       </View>
 
       )
