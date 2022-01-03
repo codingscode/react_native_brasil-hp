@@ -11,8 +11,14 @@ class App extends Component {
       super(props)
       
       this.state = {
-         LarAnimada: 150, AltAnimada: 50
+         LarAnimada: new Animated.Value(150), AltAnimada: new Animated.Value(50)
       }
+      
+      Animated.timing(
+         this.state.LarAnimada,
+         { toValue: 300, duration: 2000 }
+      ).start()
+      
       
    }
   
