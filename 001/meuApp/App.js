@@ -15,8 +15,8 @@ class App extends Component {
       }
       
       Animated.timing(
-         this.state.LarAnimada,
-         { toValue: 300, duration: 2000 }
+         this.state.AltAnimada,
+         { toValue: 150, duration: 2000 }
       ).start()
       
       
