@@ -148,7 +148,7 @@ animação em sequencia largura -> altura
 em paralelo agora
 opacidade
 
-
+sequencial e paralelo juntos
 
 
 

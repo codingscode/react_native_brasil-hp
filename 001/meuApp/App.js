@@ -21,14 +21,19 @@ class App extends Component {
             this.state.OpacidadeAnimada,
             { toValue: 1, duration: 1500 }
          ),
-         Animated.timing(
-            this.state.LarAnimada,
-            { toValue: 300, duration: 2000 }
-         ),
-         Animated.timing(
-            this.state.AltAnimada,
-            { toValue: 200, duration: 2000 }
-         )
+         Animated.parallel([
+            Animated.timing(
+               this.state.LarAnimada,
+               { toValue: 300, duration: 2000 }
+            ),
+            Animated.timing(
+               this.state.AltAnimada,
+               { toValue: 200, duration: 2000 }
+            )
+
+         ])
+
+
          
       ]).start()
 
