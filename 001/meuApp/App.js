@@ -11,12 +11,16 @@ class App extends Component {
       super(props)
       
       this.state = {
-         LarAnimada: new Animated.Value(150), AltAnimada: new Animated.Value(50), OpacidadeAnimada: new Animated.Value(1)
+         LarAnimada: new Animated.Value(150), AltAnimada: new Animated.Value(50), OpacidadeAnimada: new Animated.Value(0)
       }
       
 
 
       Animated.sequence([
+         Animated.timing(
+            this.state.OpacidadeAnimada,
+            { toValue: 1, duration: 1500 }
+         ),
          Animated.timing(
             this.state.LarAnimada,
             { toValue: 300, duration: 2000 }
@@ -24,11 +28,8 @@ class App extends Component {
          Animated.timing(
             this.state.AltAnimada,
             { toValue: 200, duration: 2000 }
-         ),
-         Animated.timing(
-            this.state.OpacidadeAnimada,
-            { toValue: 0, duration: 2000 }
          )
+         
       ]).start()
 
 
