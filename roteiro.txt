@@ -145,7 +145,7 @@ aparece valor convertido
 
 
 animação em sequencia largura -> altura
-
+em paralelo agora
 
 
 

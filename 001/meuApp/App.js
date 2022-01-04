@@ -16,7 +16,7 @@ class App extends Component {
       
 
 
-      Animated.sequence([
+      Animated.parallel([
          Animated.timing(
             this.state.LarAnimada,
             { toValue: 300, duration: 2000 }
