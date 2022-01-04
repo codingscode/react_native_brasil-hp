@@ -30,10 +30,11 @@ class App extends Component {
                this.state.AltAnimada,
                { toValue: 200, duration: 2000 }
             )
-
-         ])
-
-
+         ]),
+         Animated.timing(
+            this.state.OpacidadeAnimada,
+            { toValue: 0, duration: 1000 }
+         )
          
       ]).start()
 
