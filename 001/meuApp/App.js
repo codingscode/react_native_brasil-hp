@@ -24,14 +24,17 @@ class App extends Component {
       
    }
   
-
-  
   
     
    render() {
+   
+      let porcentagemAnimate = this.state.LarAnimada.interpolate({
+         inputRange: [0, 100], outputRange: ['0%', '100%']
+      })
+   
       return (
       <View style={estilos.container} >
-         <Animated.View style={{ backgroundColor: '#4169E1', width: this.state.LarAnimada, height: 25 }} >
+         <Animated.View style={{ backgroundColor: '#4169E1', width: porcentagemAnimate, height: 25 }} >
 
          </Animated.View>
          
