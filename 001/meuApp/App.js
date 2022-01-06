@@ -40,7 +40,7 @@ const estilos = StyleSheet.create({
       flex: 1, justifyContent: 'center', alignItems: 'flex-start'
    },
    a1: {
-      backgroundColor: '#4169E1', width: 75, height: 25
+      backgroundColor: '#4169E1', width: '75%', height: 25
    },
    a2: {
       fontSize: 25, color: '#FFFFFF'
