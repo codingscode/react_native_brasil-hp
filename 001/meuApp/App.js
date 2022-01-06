@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 
 
@@ -10,6 +10,9 @@ function App() {
 
    return (
       <View style={estilos.container} >
+         <TouchableOpacity style={estilos.botao} >
+            <Text style={estilos.botaoTexto} >Alterar nome</Text>
+         </TouchableOpacity>
          <Text style={estilos.texto} >{ nome }</Text>
          
       </View>
@@ -24,6 +27,12 @@ const estilos = StyleSheet.create({
    },
    texto: {
       color: '#000', fontSize: 35
+   },
+   botao: {
+      backgroundColor: '#222', alignItems: 'center'
+   },
+   botaoTexto: {
+      color: '#FFF'
    }
    
    
