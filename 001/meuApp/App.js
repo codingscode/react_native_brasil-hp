@@ -13,41 +13,16 @@ class App extends Component {
       this.state = {
          LarAnimada: new Animated.Value(150), AltAnimada: new Animated.Value(50), OpacidadeAnimada: new Animated.Value(0)
       }
+
       
-
-
-      Animated.sequence([
+      
+      Animated.loop(
          Animated.timing(
-            this.state.OpacidadeAnimada,
-            { toValue: 1, duration: 1500 }
-         ),
-         Animated.parallel([
-            Animated.timing(
-               this.state.LarAnimada,
-               { toValue: 300, duration: 2000 }
-            ),
-            Animated.timing(
-               this.state.AltAnimada,
-               { toValue: 200, duration: 2000 }
-            )
-         ]),
-         Animated.timing(
-            this.state.OpacidadeAnimada,
-            { toValue: 0, duration: 1000 }
+            this.state.LarAnimada,
+            { toValue: 200, duration: 700, useNativeDriver: false }
          )
-         
-      ]).start()
+      ).start()
 
-
-
-
-
-
-
-      /* Animated.timing(
-         this.state.LarAnimada,
-         { toValue: 300, duration: 2000 }
-      ).start() */
       
       
    }
@@ -56,7 +31,7 @@ class App extends Component {
    render() {
       return (
       <View style={estilos.container} >
-         <Animated.View style={{ width: this.state.LarAnimada, height: this.state.AltAnimada, backgroundColor: '#4169F1', justifyContent: 'center', opacity: this.state.OpacidadeAnimada}}>
+         <Animated.View style={{ width: this.state.LarAnimada, height: this.state.AltAnimada, backgroundColor: '#4169F1', justifyContent: 'center', borderRadius: 25 }}>
             <Text style={{ color: '#FFFFFF', fontSize: 22, textAlign: 'center' }} >Carregando...</Text>
          </Animated.View>
       </View>
