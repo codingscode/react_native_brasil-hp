@@ -11,47 +11,23 @@ class App extends Component {
       super(props)
       
       this.state = {
-         LarAnimada: new Animated.Value(150), AltAnimada: new Animated.Value(50), OpAnimada: new Animated.Value(0)
+
       }
       
-      this.carregarGrafico = this.carregarGrafico.bind(this)
-           
       
    }
   
 
-   carregarGrafico() {
-      Animated.sequence([
-         Animated.timing(
-            this.state.OpAnimada,
-            { toValue: 1, duration: 400, useNativeDriver: false }
-         ),
-         Animated.timing(
-            this.state.AltAnimada,
-            { toValue: 300, duration: 1000, useNativeDriver: false }
-         ),
-      ]).start()
-
-   }
+  
   
     
    render() {
       return (
       <View style={estilos.container} >
          <View style={estilos.a1} >
-            <TouchableOpacity onPress={this.carregarGrafico} >
-               <Text style={estilos.a2} >
-                  Gerar gráfico...
-               </Text>
-            </TouchableOpacity>
-         </View>
-         <View style={estilos.a3} >
-            <Text>Vendas</Text>
-            <Animated.View style={{ width: this.state.LarAnimada, height: this.state.AltAnimada, backgroundColor: '#FF0000', justifyContent: 'center', opacity: this.state.OpAnimada}}>
-               <Text style={{ color: '#FFFFFF', fontSize: 22, textAlign: 'center' }} >R$ 150,00</Text>
-            </Animated.View>
 
          </View>
+         
       </View>
 
       )
@@ -61,10 +37,10 @@ class App extends Component {
 
 const estilos = StyleSheet.create({
    container: {
-      flex: 1
+      flex: 1, justifyContent: 'center', alignItems: 'flex-start'
    },
    a1: {
-      height: 80, alignItems: 'center', justifyContent: 'center', flexDirection: 'row', backgroundColor: '#4169E1'
+      backgroundColor: '#4169E1', width: 75, height: 25
    },
    a2: {
       fontSize: 25, color: '#FFFFFF'
@@ -79,3 +55,5 @@ const estilos = StyleSheet.create({
 
 
 export default App
+
+
