@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
 
@@ -6,11 +6,11 @@ import { View, Text, StyleSheet } from 'react-native'
 
 
 function App() {
-
+   const [nome, setNome] = useState('Aladin')
 
    return (
       <View style={estilos.container} >
-         <Text>oie</Text>
+         <Text style={estilos.texto} >{ nome }</Text>
          
       </View>
 
@@ -20,9 +20,11 @@ function App() {
 
 const estilos = StyleSheet.create({
    container: {
-      flex: 1
+      flex: 1, marginTop: 15
    },
-   
+   texto: {
+      color: '#000', fontSize: 35
+   }
    
    
 
