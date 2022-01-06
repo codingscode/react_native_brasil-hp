@@ -20,7 +20,12 @@ class App extends Component {
    }
   
    carregarGrafico() {
-
+      Animated.sequence([
+         Animated.timing(
+            this.state.AltAnimada,
+            { toValue: 300, duration: 1000, useNativeDriver: false }
+         )
+      ]).start()
 
    }
   
@@ -36,8 +41,8 @@ class App extends Component {
             </TouchableOpacity>
          </View>
          <View style={estilos.a3} >
-            <Animated.View style={{ width: this.state.LarAnimada, height: this.state.AltAnimada, backgroundColor: '#4169F1', justifyContent: 'center', borderRadius: 25 }}>
-               <Text style={{ color: '#FFFFFF', fontSize: 22, textAlign: 'center', opacity: this.state.OpAnimada }} >Carregando...</Text>
+            <Animated.View style={{ width: this.state.LarAnimada, height: this.state.AltAnimada, backgroundColor: '#FF0000', justifyContent: 'center' }}>
+               <Text style={{ color: '#FFFFFF', fontSize: 22, textAlign: 'center' }} >R$ 150,00</Text>
             </Animated.View>
 
          </View>
