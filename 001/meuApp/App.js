@@ -11,8 +11,15 @@ class App extends Component {
       super(props)
       
       this.state = {
-
+         LarAnimada: new Animated.Value(50)
       }
+      
+      Animated.timing(
+         this.state.LarAnimada,
+         { toValue: 100, duration: 3000, useNativeDriver: false }
+      ).start()
+      
+      
       
       
    }
@@ -24,9 +31,9 @@ class App extends Component {
    render() {
       return (
       <View style={estilos.container} >
-         <View style={estilos.a1} >
+         <Animated.View style={{ backgroundColor: '#4169E1', width: this.state.LarAnimada, height: 25 }} >
 
-         </View>
+         </Animated.View>
          
       </View>
 
@@ -40,7 +47,7 @@ const estilos = StyleSheet.create({
       flex: 1, justifyContent: 'center', alignItems: 'flex-start'
    },
    a1: {
-      backgroundColor: '#4169E1', width: '75%', height: 25
+      
    },
    a2: {
       fontSize: 25, color: '#FFFFFF'
