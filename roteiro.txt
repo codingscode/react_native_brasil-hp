@@ -150,7 +150,7 @@ opacidade
 
 sequencial e paralelo juntos
 
-
+muda o nome
 
 
 

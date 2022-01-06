@@ -8,9 +8,13 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 function App() {
    const [nome, setNome] = useState('Aladin')
 
+   function alterarNome() {
+      setNome('Apolo')
+   }
+
    return (
       <View style={estilos.container} >
-         <TouchableOpacity style={estilos.botao} >
+         <TouchableOpacity style={estilos.botao} onPress={alterarNome} >
             <Text style={estilos.botaoTexto} >Alterar nome</Text>
          </TouchableOpacity>
          <Text style={estilos.texto} >{ nome }</Text>
