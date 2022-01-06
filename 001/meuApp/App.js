@@ -13,14 +13,21 @@ class App extends Component {
       this.state = {
          LarAnimada: new Animated.Value(150), AltAnimada: new Animated.Value(50), OpacidadeAnimada: new Animated.Value(0)
       }
-
       
       
       Animated.loop(
-         Animated.timing(
-            this.state.LarAnimada,
-            { toValue: 200, duration: 700, useNativeDriver: false }
-         )
+         Animated.sequence([
+            Animated.timing(
+               this.state.LarAnimada,
+               { toValue: 200, duration: 700, useNativeDriver: false }
+            ),
+            Animated.timing(
+               this.state.LarAnimada,
+               { toValue: 150, duration: 700, useNativeDriver: false }
+            ),
+         
+         ])
+      
       ).start()
 
       
