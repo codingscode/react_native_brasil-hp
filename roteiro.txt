@@ -152,6 +152,7 @@ sequencial e paralelo juntos
 
 muda o nome
 
+pega nome de entrada e o seta
 
 
 

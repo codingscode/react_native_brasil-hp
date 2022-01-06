@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, TextInput } from 'react-native'
 
 
 
@@ -7,13 +7,18 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 function App() {
    const [nome, setNome] = useState('Aladin')
+   const [entrada, setEntrada] = useState('')
 
+
+   
    function alterarNome() {
-      setNome('Apolo')
+      setNome(entrada)
+      setEntrada('')
    }
 
    return (
       <View style={estilos.container} >
+         <TextInput placeholder="Seu nome..." value={entrada} onChangeText={(valor) => setEntrada(valor)} />
          <TouchableOpacity style={estilos.botao} onPress={alterarNome} >
             <Text style={estilos.botaoTexto} >Alterar nome</Text>
          </TouchableOpacity>
