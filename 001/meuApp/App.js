@@ -46,6 +46,7 @@ class App extends Component {
             </TouchableOpacity>
          </View>
          <View style={estilos.a3} >
+            <Text>Vendas</Text>
             <Animated.View style={{ width: this.state.LarAnimada, height: this.state.AltAnimada, backgroundColor: '#FF0000', justifyContent: 'center', opacity: this.state.OpAnimada}}>
                <Text style={{ color: '#FFFFFF', fontSize: 22, textAlign: 'center' }} >R$ 150,00</Text>
             </Animated.View>
