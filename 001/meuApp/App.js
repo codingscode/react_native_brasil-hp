@@ -11,7 +11,7 @@ class App extends Component {
       super(props)
       
       this.state = {
-         LarAnimada: new Animated.Value(150), AltAnimada: new Animated.Value(50), OpAnimada: 1
+         LarAnimada: new Animated.Value(150), AltAnimada: new Animated.Value(50), OpAnimada: new Animated.Value(0)
       }
       
       this.carregarGrafico = this.carregarGrafico.bind(this)
@@ -19,12 +19,17 @@ class App extends Component {
       
    }
   
+
    carregarGrafico() {
       Animated.sequence([
          Animated.timing(
+            this.state.OpAnimada,
+            { toValue: 1, duration: 400, useNativeDriver: false }
+         ),
+         Animated.timing(
             this.state.AltAnimada,
             { toValue: 300, duration: 1000, useNativeDriver: false }
-         )
+         ),
       ]).start()
 
    }
@@ -41,7 +46,7 @@ class App extends Component {
             </TouchableOpacity>
          </View>
          <View style={estilos.a3} >
-            <Animated.View style={{ width: this.state.LarAnimada, height: this.state.AltAnimada, backgroundColor: '#FF0000', justifyContent: 'center' }}>
+            <Animated.View style={{ width: this.state.LarAnimada, height: this.state.AltAnimada, backgroundColor: '#FF0000', justifyContent: 'center', opacity: this.state.OpAnimada}}>
                <Text style={{ color: '#FFFFFF', fontSize: 22, textAlign: 'center' }} >R$ 150,00</Text>
             </Animated.View>
 
