@@ -162,7 +162,7 @@ https://github.com/react-native-async-storage/async-storage
 
 o valor fica gravado, experimentar recarregar
 
-
+observar console, renderização desnecessaria do ultimo valor guardado
 
 
 

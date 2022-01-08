@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { View, Text, StyleSheet, TouchableOpacity, TextInput } from 'react-native'
 
 import AsyncStorage from '@react-native-async-storage/async-storage'
@@ -10,6 +10,7 @@ function App() {
    const [entrada, setEntrada] = useState('')
 
 
+   //component didmount
    useEffect(() => {
       async function acessarStorage() {
          const nomeStorage = await AsyncStorage.getItem('nomes')
@@ -23,6 +24,7 @@ function App() {
    }, [])
 
 
+   //component didupdate
    useEffect(()=>{
    
       async function salvarStorage() {
@@ -37,6 +39,10 @@ function App() {
       setNome(entrada)
       setEntrada('')
    }
+   
+   const letrasNome = nome.length
+   console.log(letrasNome)
+   
 
    return (
       <View style={estilos.container} >
@@ -45,6 +51,7 @@ function App() {
             <Text style={estilos.botaoTexto} >Alterar nome</Text>
          </TouchableOpacity>
          <Text style={estilos.texto} >{ nome }</Text>
+         <Text style={estilos.texto} >Tem { letrasNome } letras</Text>
          
       </View>
 
