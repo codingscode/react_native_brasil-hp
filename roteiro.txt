@@ -160,7 +160,7 @@ https://github.com/react-native-async-storage/async-storage
    npm install @react-native-async-storage/async-storage
 
 
-
+o valor fica gravado, experimentar recarregar
 
 
 

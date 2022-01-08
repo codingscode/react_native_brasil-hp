@@ -6,8 +6,22 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 
 
 function App() {
-   const [nome, setNome] = useState('Aladin')
+   const [nome, setNome] = useState('')
    const [entrada, setEntrada] = useState('')
+
+
+   useEffect(() => {
+      async function acessarStorage() {
+         const nomeStorage = await AsyncStorage.getItem('nomes')
+         if (nomeStorage !== null) {
+            setNome(nomeStorage)
+         }
+      }
+
+      acessarStorage()
+
+   }, [])
+
 
    useEffect(()=>{
    
