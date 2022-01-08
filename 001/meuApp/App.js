@@ -40,9 +40,11 @@ function App() {
       setEntrada('')
    }
    
-   const letrasNome = nome.length
-   console.log(letrasNome)
-   
+   const letrasNome = useMemo(() => {
+      console.log('Mudou letra')
+      return nome.length
+   }, [nome])
+  
 
    return (
       <View style={estilos.container} >

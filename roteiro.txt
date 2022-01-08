@@ -164,7 +164,7 @@ o valor fica gravado, experimentar recarregar
 
 observar console, renderização desnecessaria do ultimo valor guardado
 
-
+sem renderização desnecessaria
 
 
 
