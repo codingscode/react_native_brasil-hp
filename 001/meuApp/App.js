@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { View, Text, StyleSheet, TouchableOpacity, TextInput } from 'react-native'
 
-
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 
 
@@ -9,7 +9,15 @@ function App() {
    const [nome, setNome] = useState('Aladin')
    const [entrada, setEntrada] = useState('')
 
-
+   useEffect(()=>{
+   
+      async function salvarStorage() {
+         await AsyncStorage.setItem('nomes', nome)
+      }
+      
+      salvarStorage()
+      
+   }, [nome])
    
    function alterarNome() {
       setNome(entrada)
