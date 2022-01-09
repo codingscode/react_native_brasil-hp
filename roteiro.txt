@@ -172,7 +172,7 @@ tirado alterado
 "@react-native-picker/picker": "^1.16.7",
 "@react-native-community/slider": "^4.1.3",
             
-
+clicando em novo nome foca no campo entrada
 
 
 
