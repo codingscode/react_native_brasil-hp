@@ -175,8 +175,11 @@ tirado alterado
 clicando em novo nome foca no campo entrada
 
 
+-------------------------------
 
+buscador de cep
 
+https://viacep.com.br/ws/01001000/json/
 
 
 
