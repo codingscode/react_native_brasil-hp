@@ -167,7 +167,11 @@ observar console, renderização desnecessaria do ultimo valor guardado
 sem renderização desnecessaria
 
 
-
+tirado alterado
+"@react-native-community/async-storage": "^1.12.1",
+"@react-native-picker/picker": "^1.16.7",
+"@react-native-community/slider": "^4.1.3",
+            
 
 
 
