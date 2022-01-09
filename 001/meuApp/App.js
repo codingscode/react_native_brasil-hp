@@ -25,6 +25,13 @@ function App() {
                <Text style={estilos.botaoTexto} >Limpar</Text>
             </TouchableOpacity>
          </View>
+         <View style={estilos.resultado} >
+            <Text style={estilos.itemTexto} >CEP: 7900000</Text>
+            <Text style={estilos.itemTexto} >Logradouro: 7900000</Text>
+            <Text style={estilos.itemTexto} >Bairro: Centro</Text>
+            <Text style={estilos.itemTexto} >Cidade: Sao Paulo</Text>
+            <Text style={estilos.itemTexto} >Estado: SP</Text>
+         </View>
          
       </SafeAreaView>
 
@@ -53,6 +60,12 @@ const estilos = StyleSheet.create({
    },
    botaoTexto: {
       fontSize: 22, color: '#FFFF'
+   },
+   resultado: {
+      flex: 1, justifyContent: 'center', alignItems: 'center'
+   },
+   itemTexto: {
+      fontSize: 22
    }
    
    
