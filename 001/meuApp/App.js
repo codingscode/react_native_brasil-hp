@@ -17,6 +17,7 @@ function App() {
    function limpar() {
       setCep('')
       entradaRef.current.focus()
+      setCepUsuario(null)
    }
 
    async function buscar() {
