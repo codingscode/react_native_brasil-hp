@@ -16,6 +16,15 @@ function App() {
       setCep('')
       entradaRef.current.focus()
    }
+
+   function buscar() {
+      if (cep == '') {
+         alert('Digite um cep válido')
+         setCep('')
+         return
+      }
+      
+   }
    
 
    return (
@@ -25,7 +34,7 @@ function App() {
             <TextInput style={estilos.entrada} placeholder="Ex: 79003241" value={cep} onChangeText={ (texto) => setCep(texto) } keyboardType="numeric" ref={entradaRef} />
          </View>
          <View style={estilos.areaBtn} >
-            <TouchableOpacity style={[estilos.botao, {backgroundColor: 'blue'}]} >
+            <TouchableOpacity style={[estilos.botao, {backgroundColor: 'blue'}]} onPress={buscar} >
                <Text style={estilos.botaoTexto} >Buscar</Text>
             </TouchableOpacity>
             <TouchableOpacity style={[estilos.botao, {backgroundColor: 'orange'}]} onPress={limpar} >
