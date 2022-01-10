@@ -194,6 +194,17 @@ clicar em buscar
 
 
 
+se digitado cep valido:
+"""
+{"bairro": "", "cep": "65130-000", "complemento": "", "ddd": "98", "gia": "", "ibge": "2107506", "localidade": "Paço do Lumiar", "logradouro": "", "siafi": "0849", "uf": "MA"}
+"""
+
+
+se cep invalido:
+"""
+erro: Error: Request failed with status code 400
+"""
+
 
 
 

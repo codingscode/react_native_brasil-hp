@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, SafeAreaView } from 'react-native'
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, SafeAreaView, Keyboard } from 'react-native'
 
 import api from './src/services/api'
 
@@ -26,11 +26,12 @@ function App() {
       
       
       try {
-         const resposta = await api.get('/79003241/json')
+         const resposta = await api.get(`/${cep}/json`)
          console.log(resposta.data)
-
+         Keyboard.dismiss()  // fecha o teclado
       }
       catch(erro) {
+         setCep('')
          console.log(`erro: ${erro}`)
       }
 
