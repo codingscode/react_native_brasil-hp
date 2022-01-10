@@ -10,6 +10,8 @@ function App() {
    
    const [cep, setCep] = useState('')
    const entradaRef = useRef(null)
+   const [cepUsuario, setCepUsuario] = useState(null)
+   
    
    
    function limpar() {
@@ -28,6 +30,8 @@ function App() {
       try {
          const resposta = await api.get(`/${cep}/json`)
          console.log(resposta.data)
+         setCepUsuario(resposta.data)
+         
          Keyboard.dismiss()  // fecha o teclado
       }
       catch(erro) {
@@ -52,13 +56,18 @@ function App() {
                <Text style={estilos.botaoTexto} >Limpar</Text>
             </TouchableOpacity>
          </View>
-         <View style={estilos.resultado} >
-            <Text style={estilos.itemTexto} >CEP: 7900000</Text>
-            <Text style={estilos.itemTexto} >Logradouro: 7900000</Text>
-            <Text style={estilos.itemTexto} >Bairro: Centro</Text>
-            <Text style={estilos.itemTexto} >Cidade: Sao Paulo</Text>
-            <Text style={estilos.itemTexto} >Estado: SP</Text>
-         </View>
+         
+         { cepUsuario && (
+            <View style={estilos.resultado} >
+               <Text style={estilos.itemTexto} >CEP: {cepUsuario.cep}</Text>
+               <Text style={estilos.itemTexto} >Logradouro: {cepUsuario.logradouro}</Text>
+               <Text style={estilos.itemTexto} >Bairro: {cepUsuario.bairro}</Text>
+               <Text style={estilos.itemTexto} >Cidade: {cepUsuario.localidade}</Text>
+               <Text style={estilos.itemTexto} >Estado: {cepUsuario.uf}</Text>
+            </View>
+         )}
+         
+
          
       </SafeAreaView>
 
