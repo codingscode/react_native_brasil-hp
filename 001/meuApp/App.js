@@ -17,13 +17,23 @@ function App() {
       entradaRef.current.focus()
    }
 
-   function buscar() {
+   async function buscar() {
       if (cep == '') {
          alert('Digite um cep válido')
          setCep('')
          return
       }
       
+      
+      try {
+         const resposta = await api.get('/79003241/json')
+         console.log(resposta.data)
+
+      }
+      catch(erro) {
+         console.log(`erro: ${erro}`)
+      }
+
    }
    
 

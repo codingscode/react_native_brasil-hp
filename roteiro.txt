@@ -185,7 +185,12 @@ clicando no botao limpar faz focar no campo de entrada
 
 deixar entrada vazia e clicar no botao buscar, aparece mensagem
 
+clicar em buscar
 
+
+"""
+{"bairro": "Vila Rosa Pires", "cep": "79003-241", "complemento": "", "ddd": "67", "gia": "", "ibge": "5002704", "localidade": "Campo Grande", "logradouro": "Rua Chaadi Scaff", "siafi": "9051", "uf": "MS"}
+"""
 
 
 
