@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, SafeAreaView } from 'react-native'
 
 import api from './src/services/api'
@@ -9,19 +9,26 @@ import api from './src/services/api'
 function App() {
    
    const [cep, setCep] = useState('')
+   const entradaRef = useRef(null)
+   
+   
+   function limpar() {
+      setCep('')
+      entradaRef.current.focus()
+   }
    
 
    return (
       <SafeAreaView style={estilos.container} >
          <View style={estilos.a1} >
             <Text style={estilos.texto} >Digite o cep desejado</Text>
-            <TextInput style={estilos.entrada} placeholder="Ex: 79003241" value={cep} onChangeText={ (texto) => setCep(texto) } keyboardType="numeric" />
+            <TextInput style={estilos.entrada} placeholder="Ex: 79003241" value={cep} onChangeText={ (texto) => setCep(texto) } keyboardType="numeric" ref={entradaRef} />
          </View>
          <View style={estilos.areaBtn} >
             <TouchableOpacity style={[estilos.botao, {backgroundColor: 'blue'}]} >
                <Text style={estilos.botaoTexto} >Buscar</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={[estilos.botao, {backgroundColor: 'orange'}]} >
+            <TouchableOpacity style={[estilos.botao, {backgroundColor: 'orange'}]} onPress={limpar} >
                <Text style={estilos.botaoTexto} >Limpar</Text>
             </TouchableOpacity>
          </View>
