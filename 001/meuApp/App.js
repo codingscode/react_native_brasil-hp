@@ -17,7 +17,7 @@ function App() {
          <FontAwesome name="user" size={45} color="green" />
          <Feather name="gift" size={65} color="purple" />
          <TouchableOpacity style={estilos.botaoYT} >
-            <FontAwesome name="youtube" size={35} color="red" />
+            <FontAwesome name="youtube" size={35} color="#FFF" />
             <Text style={estilos.botaoTexto} >Acessar canal</Text>
          </TouchableOpacity>
          
@@ -32,10 +32,10 @@ const estilos = StyleSheet.create({
       flex: 1, justifyContent: 'center', alignItems: 'center'
    },
    botaoYT: {
-
+      flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 5, backgroundColor: '#FF0000', borderRadius: 5
    },
    botaoTexto: {
-      
+      paddingLeft: 10, color: '#FFF'
    }
   
    
