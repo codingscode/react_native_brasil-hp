@@ -210,12 +210,19 @@ digitar cep
 
 ----------------------------------------------------
 
+https://github.com/oblador/react-native-vector-icons
+
+https://fontawesome.com/v5.15/icons?d=gallery&p=2
+   ver nomes -> home, ....
 
 
+no terminal:
+   npm install react-native-vector-icons
 
 
+-> meuApp/ios/meuApp/Info.plist
 
-
+-> meuApp/android/app/build.gradle
 
 
 
