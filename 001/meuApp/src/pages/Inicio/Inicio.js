@@ -10,6 +10,7 @@ function Inicio() {
    return (
        <View>
            <Text>Inicio</Text>
+           <Text>Bem vindo a tela inicio</Text>
        </View>
    )
 
@@ -17,7 +18,3 @@ function Inicio() {
 
 
 export default Inicio
-
-
-
-
