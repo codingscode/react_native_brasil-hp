@@ -3,7 +3,7 @@ import { View, Text, Button } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 
-function Sobre() {
+function Sobre({ route }) {
 
    const navegacao = useNavigation()
 
@@ -11,6 +11,8 @@ function Sobre() {
    return (
        <View>
            <Text>Sobre</Text>
+           <Text>{route.params.nome}</Text>
+           <Text>{route.params.email}</Text>
            <Button title="Voltar para Inicio!" onPress={() => navegacao.goBack()} />
        </View>
    )

@@ -9,7 +9,7 @@ function Inicio() {
    const navegacao = useNavigation()
 
    function irSobre() {
-      navegacao.navigate('Sobre')
+      navegacao.navigate('Sobre', { nome: 'Aladin', email: 'aladin@gmail.com' })
    }
 
    return (
