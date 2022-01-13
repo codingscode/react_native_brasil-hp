@@ -22,7 +22,7 @@ function App() {
             <Stack.Screen name="Inicio" component={Inicio} 
                           options={
                              {title: 'Inicio', headerStyle: {backgroundColor: '#121212'}, 
-                              headerTintColor: '#FFF'}} />
+                              headerTintColor: '#FFF', headerShown: false}} />
             <Stack.Screen name="Sobre" component={Sobre}  />
          </Stack.Navigator>
       </NavigationContainer>
