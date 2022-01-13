@@ -19,7 +19,10 @@ function App() {
    return (
       <NavigationContainer>
          <Stack.Navigator initialRouteName="Inicio" >
-            <Stack.Screen name="Inicio" component={Inicio}  />
+            <Stack.Screen name="Inicio" component={Inicio} 
+                          options={
+                             {title: 'Inicio', headerStyle: {backgroundColor: '#121212'}, 
+                              headerTintColor: '#FFF'}} />
             <Stack.Screen name="Sobre" component={Sobre}  />
          </Stack.Navigator>
       </NavigationContainer>
