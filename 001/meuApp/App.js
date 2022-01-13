@@ -18,7 +18,7 @@ function App() {
 
    return (
       <NavigationContainer>
-         <Stack.Navigator>
+         <Stack.Navigator initialRouteName="Sobre" >
             <Stack.Screen name="Inicio" component={Inicio}  />
             <Stack.Screen name="Sobre" component={Sobre}  />
          </Stack.Navigator>

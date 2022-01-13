@@ -239,7 +239,9 @@ clicar em 'ir para sobre'
 
 aparece o valor de nome e email
 
+? -> evita erros, passa em branco
 
+a página Sobre aparece primeiro
 
 
 

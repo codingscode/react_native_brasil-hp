@@ -11,8 +11,8 @@ function Sobre({ route }) {
    return (
        <View>
            <Text>Sobre</Text>
-           <Text>{route.params.nome}</Text>
-           <Text>{route.params.email}</Text>
+           <Text>{route.params?.nome}</Text>
+           <Text>{route.params?.email}</Text>
            <Button title="Voltar para Inicio!" onPress={() => navegacao.goBack()} />
        </View>
    )
