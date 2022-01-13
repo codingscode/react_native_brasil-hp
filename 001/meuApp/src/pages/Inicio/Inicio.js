@@ -6,10 +6,10 @@ import { useNavigation } from '@react-navigation/native'
 
 function Inicio() {
 
-   const navigation = useNavigation()
+   const navegacao = useNavigation()
 
    function irSobre() {
-      navigation.navigate('Sobre')
+      navegacao.navigate('Sobre')
    }
 
    return (
