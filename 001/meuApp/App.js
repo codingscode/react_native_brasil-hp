@@ -1,9 +1,15 @@
 import React from 'react'
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import FontAwesome from 'react-native-vector-icons/FontAwesome'
-import Feather from 'react-native-vector-icons/Feather'
 
+import Inicio from './src/pages/Inicio/Inicio'
+import Sobre from './src/pages/Sobre/Sobre'
+
+
+
+const Stack = createNativeStackNavigator()
 
 
 function App() {
@@ -11,18 +17,13 @@ function App() {
    
 
    return (
-      <View style={estilos.container} >
-         <Text>oie</Text>
-         <FontAwesome name="home" size={45} color="#11118c" />
-         <FontAwesome name="user" size={45} color="green" />
-         <Feather name="gift" size={65} color="purple" />
-         <TouchableOpacity style={estilos.botaoYT} >
-            <FontAwesome name="youtube" size={35} color="#FFF" />
-            <Text style={estilos.botaoTexto} >Acessar canal</Text>
-         </TouchableOpacity>
-         
-      </View>
-
+      <NavigationContainer>
+         <Stack.Navigator>
+            <Stack.Screen name="Inicio" component={Inicio}  />
+            <Stack.Screen name="Sobre" component={Sobre}  />
+         </Stack.Navigator>
+      </NavigationContainer>
+      
    )
 
 }
@@ -31,12 +32,7 @@ const estilos = StyleSheet.create({
    container: {
       flex: 1, justifyContent: 'center', alignItems: 'center'
    },
-   botaoYT: {
-      flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 5, backgroundColor: '#FF0000', borderRadius: 5
-   },
-   botaoTexto: {
-      paddingLeft: 10, color: '#FFF'
-   }
+   
   
    
 
