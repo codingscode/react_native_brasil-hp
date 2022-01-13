@@ -226,6 +226,36 @@ no terminal:
 
 
 
+https://reactnavigation.org/
+
+
+terminal:
+    npm install @react-navigation/native
+    npm install react-native-screens react-native-safe-area-context
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
