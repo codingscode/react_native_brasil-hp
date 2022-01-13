@@ -241,7 +241,9 @@ aparece o valor de nome e email
 
 ? -> evita erros, passa em branco
 
-a página Sobre aparece primeiro
+a página Sobre aparece primeiro; sem o ? dá erro
+
+a página Inicio aparece primeiro
 
 
 
