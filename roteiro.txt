@@ -235,6 +235,7 @@ terminal:
     npm install @react-navigation/native-stack
 
 
+clicar em 'ir para sobre'
 
 
 

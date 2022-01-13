@@ -1,16 +1,22 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Button } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 
 
 
 function Inicio() {
 
+   const navigation = useNavigation()
 
+   function irSobre() {
+      navigation.navigate('Sobre')
+   }
 
    return (
        <View>
            <Text>Inicio</Text>
            <Text>Bem vindo a tela inicio</Text>
+           <Button title="Ir para Sobre" onPress={irSobre} />
        </View>
    )
 
