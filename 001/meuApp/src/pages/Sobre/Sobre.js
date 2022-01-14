@@ -7,6 +7,9 @@ function Sobre({ route }) {
 
    const navegacao = useNavigation()
 
+   navegacao.setOptions({
+      title: `Sobre ${route.params?.nome}`
+   })
 
    return (
        <View>
