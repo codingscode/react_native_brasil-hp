@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import Inicio from './src/pages/Inicio/Inicio'
 import Sobre from './src/pages/Sobre/Sobre'
-
+import Contato from './src/pages/Contato/Contato'
 
 
 const Stack = createNativeStackNavigator()
@@ -24,6 +24,7 @@ function App() {
                              {title: 'Inicio', headerStyle: {backgroundColor: '#121212'}, 
                               headerTintColor: '#FFF', headerShown: false}} />
             <Stack.Screen name="Sobre" component={Sobre}  />
+            <Stack.Screen name="Contato" component={Contato}  />
          </Stack.Navigator>
       </NavigationContainer>
       

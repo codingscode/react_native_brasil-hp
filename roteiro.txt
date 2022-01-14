@@ -245,7 +245,7 @@ a página Sobre aparece primeiro; sem o ? dá erro
 
 a página Inicio aparece primeiro
 
-
+em Sobre -> ir em Contato
 
 
 
