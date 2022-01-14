@@ -247,7 +247,7 @@ a página Inicio aparece primeiro
 
 em Sobre -> ir em Contato
 
-
+em Contato -> ir em Voltar para Inicio
 
 
 
