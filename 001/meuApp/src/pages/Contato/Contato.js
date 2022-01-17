@@ -1,18 +1,13 @@
 import React from 'react'
-import { View, Text, Button } from 'react-native'
-import { useNavigation, StackActions } from '@react-navigation/native'
+import { View, Text } from 'react-native'
 
 
-function Contato({ route }) {
-
-   const navegacao = useNavigation()
+function Contato() {
 
    
    return (
        <View>
            <Text>Contato</Text>
-           <Button title="Voltar tela!" onPress={() => navegacao.goBack()} />
-           <Button title="Voltar para Inicio!" onPress={() => navegacao.dispatch(StackActions.popToTop())} />
        </View>
    )
 
@@ -20,3 +15,5 @@ function Contato({ route }) {
 
 
 export default Contato
+
+

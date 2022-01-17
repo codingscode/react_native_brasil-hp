@@ -251,11 +251,11 @@ em Contato -> ir em Voltar para Inicio
 
 
 
+https://reactnavigation.org/docs/tab-based-navigation/
+   npm install @react-navigation/bottom-tabs
+   
 
-
-
-
-
+Aparece uma tela com as respectivas abas em baixo
 
 
 
