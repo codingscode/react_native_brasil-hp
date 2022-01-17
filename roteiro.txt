@@ -257,7 +257,7 @@ https://reactnavigation.org/docs/tab-based-navigation/
 
 Aparece uma tela com as respectivas abas em baixo
 
-
+em Inicio clicando em Contato vai para Contato
 
 
 
