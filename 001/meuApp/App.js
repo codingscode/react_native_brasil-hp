@@ -2,7 +2,7 @@ import React from 'react'
 
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import Icon from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 
 
@@ -18,7 +18,7 @@ const icones = {
       name: 'home'
    },
    Sobre: {
-      name: 'id-card'
+      name: 'store'
    },
    Contato: {
       name: 'phone'
@@ -35,12 +35,16 @@ function App() {
       <NavigationContainer>
          <Tab.Navigator 
               screenOptions={ ({route}) => ({
+                 tabBarStyle: { backgroundColor: 'purple' },
+                 tabBarActiveTintColor: '#FFF',
+                 tabBarInactiveTintColor: 'yellow',
                  tabBarIcon: ({ color, size }) => {
                     const { name } = icones[route.name]
                     return <Icon name={name} color={color} size={size} />
                     
                  }
               })}
+              
           >
             <Tab.Screen name="Inicio" component={Inicio} />
             <Tab.Screen name="Sobre" component={Sobre} />
