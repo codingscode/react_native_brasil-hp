@@ -31,10 +31,8 @@ const icones = {
 }
 
 
-function Abas() {
+function Tabs() {
    
-   
-
    return (
       
       <Tab.Navigator 
@@ -63,7 +61,7 @@ function App() {
    return (
       <NavigationContainer>
          <Stack.Navigator>
-            <Stack.Screen name="Inicio" component={Abas} />
+            <Stack.Screen name="Start" component={Tabs} options={{ headerShown: false }} />
             <Stack.Screen name="Contato" component={Contato} />
          </Stack.Navigator>
       </NavigationContainer>
