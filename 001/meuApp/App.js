@@ -19,9 +19,9 @@ function App() {
    return (
       <NavigationContainer>
          <Drawer.Navigator>
-            <Drawer.Screen name="Inicio" component={Inicio} />
-            <Drawer.Screen name="Sobre" component={Sobre} />
-            <Drawer.Screen name="Contato" component={Contato} />
+            <Drawer.Screen name="Inicio" component={Inicio} options={{ headerShown: false }} />
+            <Drawer.Screen name="Sobre" component={Sobre} options={{ headerShown: false }} />
+            <Drawer.Screen name="Contato" component={Contato} options={{ headerShown: false }} />
          </Drawer.Navigator>
       </NavigationContainer>
    )

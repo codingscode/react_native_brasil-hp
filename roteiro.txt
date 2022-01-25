@@ -293,7 +293,7 @@ arrastar pressionando a tela da esquerda para a direita
 
 clicar em "abrir menu"
 
-
+agora arrastando pressionando da esquerda para a direita, o cabeçalhozinho some
 
 
 
