@@ -271,16 +271,23 @@ https://fontawesome.com/v5.15/icons?d=gallery&p=2
 ???
 
 
+https://reactnavigation.org/docs/drawer-based-navigation
+   npm install @react-navigation/drawer
+   
 
+https://docs.swmansion.com/react-native-gesture-handler/docs/#installation
+   npm install react-native-gesture-handler react-native-reanimated
+   
 
+react-native link react-native-gesture-handler
 
+npm start --reset-cache
 
+rm -rf /tmp/metro-*
 
+npm react-native link react-native-reanimated
 
-
-
-
-
+cd android && ./gradlew clean
 
 
 

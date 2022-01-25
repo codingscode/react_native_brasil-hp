@@ -1,69 +1,28 @@
+import 'react-native-gesture-handler';
 import React from 'react'
+import { View, Text } from 'react-native'
 
 import { NavigationContainer } from '@react-navigation/native'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { createNativeStackNavigator } from  '@react-navigation/native-stack' //'@react-navigation/stack'
-import Icon from 'react-native-vector-icons/MaterialIcons'
 
-
+import { createDrawerNavigator } from '@react-navigation/drawer'
+const Drawer = createDrawerNavigator()
+ 
 
 import Inicio from './src/pages/Inicio/Inicio'
 import Sobre from './src/pages/Sobre/Sobre'
 import Contato from './src/pages/Contato/Contato'
 
 
-const Tab = createBottomTabNavigator()
-
-const Stack = createNativeStackNavigator()
-
-
-const icones = {
-   Inicio: {
-      name: 'home'
-   },
-   Sobre: {
-      name: 'store'
-   },
-   Contato: {
-      name: 'phone'
-   }
-   
-}
-
-
-function Tabs() {
-   
-   return (
-      
-      <Tab.Navigator 
-           screenOptions={ ({route}) => ({
-              tabBarStyle: { backgroundColor: 'purple' },
-              tabBarActiveTintColor: '#FFF',
-              tabBarInactiveTintColor: 'yellow',
-              tabBarIcon: ({ color, size }) => {
-                 const { name } = icones[route.name]
-                 return <Icon name={name} color={color} size={size} />
-                 
-              }
-           })}
-           
-       >
-         <Tab.Screen name="Inicio" component={Inicio} />
-         <Tab.Screen name="Sobre" component={Sobre} />
-      </Tab.Navigator>
-      
-   )
-
-}
 
 function App() {
-
+   
    return (
       <NavigationContainer>
-         <Stack.Navigator>
-            <Stack.Screen name="Start" component={Tabs} options={{ headerShown: false }} />
-            <Stack.Screen name="Contato" component={Contato} />
-         </Stack.Navigator>
+         <Drawer.Navigator>
+            <Drawer.Screen name="Inicio" component={Inicio} />
+            <Drawer.Screen name="Sobre" component={Sobre} />
+            <Drawer.Screen name="Contato" component={Contato} />
+         </Drawer.Navigator>
       </NavigationContainer>
    )
 }
