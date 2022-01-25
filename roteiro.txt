@@ -289,9 +289,9 @@ npm react-native link react-native-reanimated
 
 cd android && ./gradlew clean
 
+arrastar pressionando a tela da esquerda para a direita
 
-
-
+clicar em "abrir menu"
 
 
 
