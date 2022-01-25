@@ -295,7 +295,7 @@ clicar em "abrir menu"
 
 agora arrastando pressionando da esquerda para a direita, o cabeçalhozinho some
 
-
+agora arrastando pressionando da esquerda para a direita, aparece só a mensagem
 
 
 
