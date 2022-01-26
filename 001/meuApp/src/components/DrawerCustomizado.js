@@ -5,11 +5,11 @@ import { DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawe
 
 
 
-export default function DrawerCustomizado() {
+export default function DrawerCustomizado(props) {
 
    return (
-      <DrawerContentScrollView>
-         <Text>Olá mundo</Text>
+      <DrawerContentScrollView {...props} >
+         <DrawerItemList {...props} />
       </DrawerContentScrollView>
    )
 }
