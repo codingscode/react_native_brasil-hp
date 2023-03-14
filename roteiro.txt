@@ -323,7 +323,7 @@ https://www.youtube.com/watch?v=qIcSXr2Qy84
 
 npm start --reset-cache
 
-
+https://stackoverflow.com/questions/69043806/requirenativecomponent-rnsscreenstackheaderconfig-was-not-found-in-the-uimana
 
 
 

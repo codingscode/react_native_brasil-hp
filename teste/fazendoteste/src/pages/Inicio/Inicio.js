@@ -5,12 +5,12 @@ import { useNavigation } from '@react-navigation/native'
 
 
 function Inicio() {
-   const navegacao = useNavigation()   
-   
-   function irSobre() {
-      navegacao.navigate('Sobre', { nome: 'Aladin', email: 'aladin@gmail.com' } )
-   }
 
+   const navegacao = useNavigation()
+
+   function irSobre() {
+      navegacao.navigate('Sobre', { nome: 'Aladin', email: 'aladin@gmail.com' })
+   }
 
    return (
        <View>

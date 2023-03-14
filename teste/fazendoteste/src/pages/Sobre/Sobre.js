@@ -3,10 +3,10 @@ import { View, Text, Button } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 
-
 function Sobre({ route }) {
 
    const navegacao = useNavigation()
+
 
    return (
        <View>
@@ -21,3 +21,4 @@ function Sobre({ route }) {
 
 
 export default Sobre
+
