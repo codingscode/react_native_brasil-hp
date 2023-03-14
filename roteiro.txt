@@ -321,7 +321,7 @@ https://www.recoverandroid-data.com/fix-install-failed-user-restricted-error-and
 https://www.youtube.com/watch?v=qIcSXr2Qy84
 
 
-
+npm start --reset-cache
 
 
 
