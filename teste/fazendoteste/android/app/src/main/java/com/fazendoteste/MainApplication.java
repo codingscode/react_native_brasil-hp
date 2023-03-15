@@ -10,6 +10,7 @@ import com.facebook.react.defaults.DefaultReactNativeHost;
 import com.facebook.soloader.SoLoader;
 import java.util.List;
 
+
 public class MainApplication extends Application implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost =
@@ -32,7 +33,7 @@ public class MainApplication extends Application implements ReactApplication {
         protected String getJSMainModuleName() {
           return "index";
         }
-
+        
         @Override
         protected boolean isNewArchEnabled() {
           return BuildConfig.IS_NEW_ARCHITECTURE_ENABLED;
