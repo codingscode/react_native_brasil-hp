@@ -5,7 +5,6 @@ import { View, Text, Button } from 'react-native'
 
 function Sobre() {
 
-
    return (
       <View>
          <Text>Sobre</Text>
@@ -14,6 +13,4 @@ function Sobre() {
 
 }
 
-
 export default Sobre
-

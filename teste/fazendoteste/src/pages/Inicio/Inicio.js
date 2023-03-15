@@ -12,7 +12,7 @@ function Inicio() {
        <View>
            <Text>Inicio</Text>
            <Button title="Contato" onPress={ () => navegacao.navigate('Contato') } />
-
+           <Button title="Abrir menu" onPress={ () => navegacao.toggleDrawer() } />
        </View>
    )
 

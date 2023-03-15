@@ -8,6 +8,9 @@ function Contato() {
    return (
        <View>
            <Text>Contato</Text>
+           <Text>Contato</Text>
+           <Text>Contato</Text>
+           <Text>Contato</Text>
            
        </View>
    )
