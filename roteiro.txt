@@ -375,7 +375,7 @@ pulei firebase
 
 -----------------------------------------------------
 
-
+npm i styled-components
 
 
 
