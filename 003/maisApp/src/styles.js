@@ -14,3 +14,9 @@ export const Titulo = styled.Text`
 color: lightgreen;
 font-size: 25px;
 `
+
+export const Nome = styled.Text`
+   color: #FFF;
+   font-size: 20px;
+`
+
