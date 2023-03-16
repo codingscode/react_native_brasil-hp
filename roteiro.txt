@@ -377,7 +377,16 @@ pulei firebase
 
 npm i styled-components
 
+pulei pasta 9
 
+
+---------------------------------------------
+
+https://github.com/react-native-camera/react-native-camera/tree/master
+
+https://www.npmjs.com/package/react-native-camera
+
+npm i react-native-camera
 
 
 
