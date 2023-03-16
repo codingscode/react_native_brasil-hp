@@ -8,7 +8,7 @@ function App() {
    
    return (
       <Container  >
-         <Titulo>Sujeito Programador</Titulo>
+         <Titulo cor={"yellow"} tamanho="30" >Sujeito Programador</Titulo>
          <Nome>Olá Heronnes</Nome>
       </Container>
    )
