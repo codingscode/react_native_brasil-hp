@@ -327,6 +327,78 @@ https://stackoverflow.com/questions/69043806/requirenativecomponent-rnsscreensta
 
 
 
+------------------------------------
+continuação
+
+projeto firebase
+
+https://console.firebase.google.com/project/meuapprnbrasil/overview?hl=pt
+
+o que lá aparece
+
+```
+npm install firebase
+```
+
+```
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAlskLOHyCtuH2WMtuh7zhcImiSXiBiIrs",
+  authDomain: "meuapprnbrasil.firebaseapp.com",
+  projectId: "meuapprnbrasil",
+  storageBucket: "meuapprnbrasil.appspot.com",
+  messagingSenderId: "670198124026",
+  appId: "1:670198124026:web:4b4ba23d11a43f3c382843",
+  measurementId: "G-7XDGQF9F4P"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+```
+
+ir em Criação -> Realtime Database -> criar banco de dados -> criar no modo teste 
+
+https://console.firebase.google.com/project/meuapprnbrasil/database/meuapprnbrasil-default-rtdb/data
+
+npm i --save firebase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
