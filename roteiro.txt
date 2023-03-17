@@ -389,8 +389,12 @@ https://www.npmjs.com/package/react-native-camera
 npm i react-native-camera
 
 
+--------------------------------------------
+separado
 
-
+tirar
+https://www.npmjs.com/package/react-native-vector-icons
+https://feathericons.com/
 
 
 
