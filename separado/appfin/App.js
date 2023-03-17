@@ -1,24 +1,15 @@
 
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
-
+import Home from './src/pages/Home'
 
 
 function App() {
   
 
    return (
-      <View style={estilos} >
-        <Text>Criando App</Text>
-      </View>
+      <Home />
    )
 }
-
-const estilos = StyleSheet.create({
-  container: {
-     flex: 1, backgroundColor: '#fff'
-  }
-})
-
 
 export default App
