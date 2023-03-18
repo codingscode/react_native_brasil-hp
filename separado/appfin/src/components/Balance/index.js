@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native'
 
 
 
-function Balance() {
+function Balance({ saldo, gastos }) {
   
 
    return (
@@ -13,7 +13,7 @@ function Balance() {
            <Text style={estilos.itemTitle} >Saldo</Text>
            <View style={estilos.content} >
               <Text style={estilos.currencySymbol} >R$</Text>
-              <Text style={estilos.balance} >15.000,00</Text>
+              <Text style={estilos.balance} >{saldo}</Text>
            </View>
         </View>
 
@@ -21,7 +21,7 @@ function Balance() {
            <Text style={estilos.itemTitle} >Gastos</Text>
         <View style={estilos.content} >
            <Text style={estilos.currencySymbol} >R$</Text>
-           <Text style={estilos.expenses} >390,00</Text>
+           <Text style={estilos.expenses} >-{gastos}</Text>
         </View>
         </View>
 
