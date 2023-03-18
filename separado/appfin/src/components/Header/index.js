@@ -12,11 +12,11 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 const myIcon = <Icon name="rocket" size={30} color="#900" />;
 */
 
-function Header() {
+function Header({ nome }) {
     return (
       <View style={estilos.container} >
          <View style={estilos.content} >
-            <Text style={estilos.username} >Sujeito Programador</Text>
+            <Text style={estilos.username} >{nome}</Text>
 
             <TouchableOpacity activeOpacity={0.9} style={estilos.buttonUser} >
                <Image source={require('../../images/user.png')} style={estilos.imagem} />
