@@ -4,12 +4,12 @@ import { View, Text, StyleSheet, FlatList } from 'react-native'
 
 
 
-function Movements() {
+function Movements({ data }) {
   
 
    return (
       <View style={estilos.container} >
-         <Text>Teste 123</Text>
+         <Text>{data.label}</Text>
         
       </View>
    )
