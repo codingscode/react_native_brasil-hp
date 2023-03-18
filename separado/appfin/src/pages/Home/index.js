@@ -20,7 +20,7 @@ function Home() {
         <Balance saldo="15000" gastos="2300" />
 
         <Text style={estilos.title} >Últimas movimentações</Text>
-        <FlatList style={estilos.list} data={list} keyExtractor={ (item) => String(item.id) } showsVerticalScrollIndicator={false} renderItem={ ({ item }) => <Text>TESTE</Text> }  />
+        <FlatList style={estilos.list} data={list} keyExtractor={ (item) => String(item.id) } showsVerticalScrollIndicator={false} renderItem={ ({ item }) => <Text>{item.label}</Text> }  />
 
       </View>
    )
