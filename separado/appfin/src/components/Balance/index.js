@@ -8,8 +8,8 @@ function Balance() {
   
 
    return (
-      <View>
-         <View style={estilos.item}>
+      <View style={estilos.container} >
+        <View style={estilos.item}>
            <Text style={estilos.itemTitle} >Saldo</Text>
            <View>
               <Text style={estilos.currencySymbol} >R$</Text>
@@ -17,13 +17,13 @@ function Balance() {
            </View>
         </View>
 
-<     View style={estilos.item}>
-        <Text style={estilos.itemTitle} >Gastos</Text>
+        <View style={estilos.item}>
+           <Text style={estilos.itemTitle} >Gastos</Text>
         <View>
            <Text style={estilos.currencySymbol} >R$</Text>
            <Text style={estilos.balance} >390,00</Text>
         </View>
-      </View>
+        </View>
 
       </View>
    )
@@ -31,7 +31,19 @@ function Balance() {
 
 const estilos = StyleSheet.create({
    container: {
-      backgroundColor: '#FFF'
+      backgroundColor: '#FFF',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      paddingStart: 18,
+      paddingEnd: 18,
+      marginTop: -24,
+      marginStart: 14,
+      marginEnd: 14,
+      borderRadius: 4,
+      paddingTop: 22,
+      paddingBottom: 22,
+      zIndex: 99
+
    } 
 })
 

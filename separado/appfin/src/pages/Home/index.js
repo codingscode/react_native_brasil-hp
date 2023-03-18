@@ -9,7 +9,7 @@ function Home() {
 
    return (
       <View style={estilos} >
-        <Header nome="Lucas Silva" />
+        <Header nome="H P Programador" />
         <Balance />
       </View>
    )
@@ -17,7 +17,7 @@ function Home() {
 
 const estilos = StyleSheet.create({
   container: {
-     flex: 1, backgroundColor: '#fff'
+     flex: 1, backgroundColor: '#fafafa'
   }
 })
 
