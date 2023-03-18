@@ -2,6 +2,7 @@
 import { View, Text, StyleSheet, FlatList } from 'react-native'
 import Balance from '../../components/Balance'
 import Header from '../../components/Header'
+import Movements from '../../components/Movements'
 
 
 const list = [
@@ -15,12 +16,12 @@ function Home() {
   
 
    return (
-      <View style={estilos} >
+      <View style={estilos.container} >
         <Header nome="H P Programador" />
         <Balance saldo="15000" gastos="2300" />
 
         <Text style={estilos.title} >Últimas movimentações</Text>
-        <FlatList style={estilos.list} data={list} keyExtractor={ (item) => String(item.id) } showsVerticalScrollIndicator={false} renderItem={ ({ item }) => <Text>{item.label}</Text> }  />
+        <FlatList style={estilos.list} data={list} keyExtractor={ (item) => String(item.id) } showsVerticalScrollIndicator={false} renderItem={ ({ item }) => <Movements /> }  />
 
       </View>
    )
