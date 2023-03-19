@@ -7,8 +7,8 @@ import Movements from '../../components/Movements'
 
 const list = [
    { id: 1, label: 'Boleto conta luz', valor: '300,90', data: '17/09/2022', tipo: 0 },
-   { id: 2, label: 'Pix Cliente X', valor: '2.500,00', data: '17/09/2022', tipo: 1 },
-   { id: 3, label: 'Salário', valor: '7200,00', data: '17/09/2022', tipo: 1 }
+   { id: 2, label: 'Pix Cliente X', valor: '2.500,00', data: '23/09/2022', tipo: 1 },
+   { id: 3, label: 'Salário', valor: '7200,00', data: '28/09/2022', tipo: 1 }
 ]
 
 
