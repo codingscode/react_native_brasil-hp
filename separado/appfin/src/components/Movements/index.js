@@ -15,7 +15,7 @@ function Movements({ data }) {
                {data.label}
             </Text>
             <Text style={data.tipo === 1 ? estilos.valor : estilos.expenses} >
-               R$ {data.valor}
+            {data.tipo === 1 ? `R$ ${data.valor}` : `R$ -${data.valor}`}
             </Text>
 
          </View>
