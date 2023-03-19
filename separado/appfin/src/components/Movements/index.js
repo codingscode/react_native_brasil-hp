@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 
 
 
 function Movements({ data }) {
-  
+   
+   const [mostrarValor, setMostrarValor] = useState(false)
 
    return (
       <TouchableOpacity style={estilos.container} >
@@ -14,9 +15,16 @@ function Movements({ data }) {
             <Text style={estilos.label} >
                {data.label}
             </Text>
-            <Text style={data.tipo === 1 ? estilos.valor : estilos.expenses} >
-            {data.tipo === 1 ? `R$ ${data.valor}` : `R$ -${data.valor}`}
-            </Text>
+            {mostrarValor ? (
+               <Text style={data.tipo === 1 ? estilos.valor : estilos.expenses} >
+               {data.tipo === 1 ? `R$ ${data.valor}` : `R$ -${data.valor}`}
+               </Text>
+            ) : (
+               <View style={estilos.esqueleto} >
+
+               </View>
+            )}
+
 
          </View>
 
@@ -55,6 +63,13 @@ const estilos = StyleSheet.create({
       fontSize: 16,
       color: '#e74c3c',
       fontWeight: 'bold'
+   },
+   esqueleto: {
+      marginTop: 6,
+      width: 80,
+      height: 10,
+      backgroundColor: '#DADADA',
+      borderRadius: 8
    }
    
 
