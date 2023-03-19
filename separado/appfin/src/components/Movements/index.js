@@ -9,7 +9,7 @@ function Movements({ data }) {
    const [mostrarValor, setMostrarValor] = useState(false)
 
    return (
-      <TouchableOpacity style={estilos.container} >
+      <TouchableOpacity style={estilos.container} onPress={ () => setMostrarValor(!mostrarValor) } >
          <Text style={estilos.data} >{data.data}</Text>
          <View style={estilos.content} >
             <Text style={estilos.label} >
