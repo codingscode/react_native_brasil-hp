@@ -23,8 +23,8 @@ function Movements({ data }) {
                </AnimatePresence>
             ) : (
                <AnimatePresence exitBeforeEnter >
-                  <View style={estilos.esqueleto} >
-                  </View>
+                  <MotiView style={estilos.esqueleto} from={{opacity: 0}} animate={{opacity: 1}} transition={{type: 'timing'}} >
+                  </MotiView>
                </AnimatePresence>
             )}
 
