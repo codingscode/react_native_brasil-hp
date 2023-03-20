@@ -11,7 +11,7 @@ const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 22 :
 function Header({ nome }) {
     return (
       <View style={estilos.container} >
-         <MotiView style={estilos.content} from={{translateY: -150, opacity: 0}} animate={{translateY: 0, opacity: 1}} >
+         <MotiView style={estilos.content} from={{translateY: -150, opacity: 0}} animate={{translateY: 0, opacity: 1}} transition={{type: 'timing', duration: 800, delay: 300}} >
             <Text style={estilos.username} >{nome}</Text>
 
             <TouchableOpacity activeOpacity={0.9} style={estilos.buttonUser} >
