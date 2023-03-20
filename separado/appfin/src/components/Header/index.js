@@ -12,7 +12,7 @@ function Header({ nome }) {
     return (
       <View style={estilos.container} >
          <MotiView style={estilos.content} from={{translateY: -150, opacity: 0}} animate={{translateY: 0, opacity: 1}} transition={{type: 'timing', duration: 800, delay: 300}} >
-            <Text style={estilos.username} >{nome}</Text>
+            <MotiText style={estilos.username} from={{ translateX: -300 }} animate={{ translateX: 0 }} transition={{ type: 'spring', duration: 800, delay: 800 }} >{nome}</MotiText>
 
             <TouchableOpacity activeOpacity={0.9} style={estilos.buttonUser} >
                <Image source={require('../../images/user.png')} style={estilos.imagem} />
