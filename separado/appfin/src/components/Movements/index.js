@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
-
+import { MotiView, AnimatePresence, MotiText } from 'moti'
 
 
 
@@ -16,13 +16,16 @@ function Movements({ data }) {
                {data.label}
             </Text>
             {mostrarValor ? (
-               <Text style={data.tipo === 1 ? estilos.valor : estilos.expenses} >
-               {data.tipo === 1 ? `R$ ${data.valor}` : `R$ -${data.valor}`}
-               </Text>
+               <AnimatePresence exitBeforeEnter >
+                  <MotiText style={data.tipo === 1 ? estilos.valor : estilos.expenses} from={{ translateX: 100 }} animate={{ translateX: 0 }} transition={{ type: 'timing', duration: 500 }} >
+                  {data.tipo === 1 ? `R$ ${data.valor}` : `R$ -${data.valor}`}
+                  </MotiText>
+               </AnimatePresence>
             ) : (
-               <View style={estilos.esqueleto} >
-
-               </View>
+               <AnimatePresence exitBeforeEnter >
+                  <View style={estilos.esqueleto} >
+                  </View>
+               </AnimatePresence>
             )}
 
 
