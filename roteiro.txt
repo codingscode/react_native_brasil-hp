@@ -393,10 +393,11 @@ npm i react-native-camera
 separado
 
 
+npm i moti
+npm i react-native-reanimated
 
 
-
-
+experimentar recarregar o app
 
 
 

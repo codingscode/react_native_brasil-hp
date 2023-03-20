@@ -20,6 +20,24 @@ function Actions() {
              </View>
              <Text style={estilos.labelButton} >Compras</Text>
           </TouchableOpacity>
+          <TouchableOpacity style={estilos.actionButton} >
+             <View style={estilos.areaButton} >
+                <Image size={26} color="#000" source={require('../../images/credcard.png')} />
+             </View>
+             <Text style={estilos.labelButton} >Carteira</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={estilos.actionButton} >
+             <View style={estilos.areaButton} >
+                <Image size={26} color="#000" source={require('../../images/barcode.png')} />
+             </View>
+             <Text style={estilos.labelButton} >Boletos</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={estilos.actionButton} >
+             <View style={estilos.areaButton} >
+                <Image size={26} color="#000" source={require('../../images/settings.png')} />
+             </View>
+             <Text style={estilos.labelButton} >Contas</Text>
+          </TouchableOpacity>
 
 
        </ScrollView>
